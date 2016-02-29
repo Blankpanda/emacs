@@ -1,0 +1,14 @@
+public class hello {
+    public static void main(String[] args) {
+	System.out.println("Hello World");
+	int new_meme = meme();
+	System.out.println(new_meme);
+    }
+
+    public static int meme()
+    {
+	int i = 1;
+	return i;
+    }
+
+}
