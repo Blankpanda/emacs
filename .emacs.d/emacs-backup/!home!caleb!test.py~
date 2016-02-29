@@ -1,8 +1,0 @@
-import gew.ItemList
-import gew.exchange
-
-def main():
-    item_id = gew.ItemList.get_id("Dragon mace")
-    item = gew.exchange.Item(item_id)
-
-    print(item.price)
