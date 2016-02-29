@@ -48,7 +48,7 @@
 (require 'moe-theme)
 (setq moe-theme-highlight-buffer-id t)
 (moe-dark)
-(moe-theme-set-color 'cyan)
+(moe-theme-set-color 'green)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -58,9 +58,3 @@
  '(blink-cursor-mode nil)
  '(cua-mode t nil (cua-base))
  '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Inconsolata" :foundry "unknown" :slant oblique :weight bold :height 113 :width normal)))))
