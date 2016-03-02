@@ -33,7 +33,12 @@
 ;; make it so all emacs backusp go to a backups folder
 (setq backup-directory-alist '(("" . "~/.emacs.d/emacs-backup")))
 
-;; easier windows movement (<SHIFT> + ARROW KEYS)
+;; comment/uncomment keys
+(global-set-key (kbd "C-,") 'comment-region)
+(global-set-key (kbd "C-.") 'uncomment-region)
+
+
+;; easier windows movement (<ALT> + ARROW KEYS)
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings 'meta))
 
@@ -43,6 +48,17 @@
 
 ;; java
 (require 'jdee)
+
+
+;; c auto complete
+
+;; c auto complete
+(require 'ac-c-headers')
+(add-hook 'c-mode-hook
+	  (lambda ()
+	    (add-to-list 'ac-sources 'ac-source-c-headers)
+	    (add-to-list 'ac-sources 'ac-source-c-header-symbols t)))
+
 
 ;; theme
 (require 'moe-theme)
