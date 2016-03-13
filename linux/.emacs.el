@@ -1,10 +1,12 @@
 (when (>= emacs-major-version 24)
-  (require 'package)
-  (add-to-list
-   'package-archives
+(require 'package)
+(add-to-list
+  'package-archives
    '("melpa" . "http://melpa.org/packages/")
    t)
   (package-initialize))
+
+
 
 ;; setup
 (setq initial-scratch-message "")
@@ -13,12 +15,12 @@
 (scroll-bar-mode 0)
 (menu-bar-mode 1 )
 (tool-bar-mode 0)
-
+(fringe-mode 4)
 ;; highlight line in use
 (global-hl-line-mode 1)
 ;; stop cursor blink
 (blink-cursor-mode 0)
- ;; normal copy/cut/paste
+ ;; normal copy/cut/past
 (cua-mode 1)
  ;; auto complete another parenthesis when one is typed
 (electric-pair-mode 1)
@@ -41,9 +43,15 @@
 (require 'yasnippet)
 (yas-global-mode 1 )
 
+;; auto complete mode
+(auto-complete-mode)
 ;; java
 (require 'jdee)
+(setq jde-jalopy-option-command-line-args "-lWARN")
 
+;;python
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
 ;; theme
 (require 'moe-theme)
 (setq moe-theme-highlight-buffer-id t)
