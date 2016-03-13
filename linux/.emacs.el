@@ -54,13 +54,11 @@
 (require 'jdee)
 (setq jde-jalopy-option-command-line-args "-lWARN")
 
-<<<<<<< HEAD
+
 ;;python
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
-=======
 
-;; c auto complete
 
 ;; c auto complete
 (require 'ac-c-headers')
@@ -69,8 +67,6 @@
 	    (add-to-list 'ac-sources 'ac-source-c-headers)
 	    (add-to-list 'ac-sources 'ac-source-c-header-symbols t)))
 
-
->>>>>>> ad072b1c4a4d65f7c27a5b2bb20bea2fda45f0c7
 ;; theme
 (require 'moe-theme)
 (setq moe-theme-highlight-buffer-id t)
