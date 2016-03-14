@@ -8,7 +8,7 @@
 
 ;; setup
 (setq initial-scratch-message "")
-(setq inhibit-startup-message t)
+(setq inhibit-startup-mnessage t)
 (setq visible-bell t)
 (scroll-bar-mode 0)
 (menu-bar-mode 1 )
