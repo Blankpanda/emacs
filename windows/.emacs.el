@@ -6,14 +6,20 @@
    t)
   (package-initialize))
 
+;; settings folder
+(add-to-list 'load-path "~/.emacs.d/settings")
+
 ;; setup
 (setq initial-scratch-message "")
-(setq inhibit-startup-mnessage t)
+(setq inhibit-startup-screen 1)
+(setq inhibit-startup-message t)
 (setq visible-bell t)
 (scroll-bar-mode 0)
-(menu-bar-mode 1 )
+(menu-bar-mode 1)
 (tool-bar-mode 0)
 
+;; scroll with mousewheel
+(mouse-wheel-mode 1)
 ;; highlight line in use
 (global-hl-line-mode 1)
 ;; stop cursor blink
@@ -32,7 +38,16 @@
 (global-linum-mode 1)
 ;; make it so all emacs backusp go to a backups folder
 (setq backup-directory-alist '(("" . "~/.emacs.d/emacs-backup")))
+;; highlight parenthesis
+(require 'paren)
+(show-paren-mode 1)
+;; size indication of file
+(size-indication-mode 1)
 
+;; ------ keybindings -------
+
+;; f4 to goto line
+(global-set-key [f4] 'goto-line) 
 
 ;; comment/uncomment keys
 (global-set-key (kbd "C-,") 'comment-region)
@@ -47,6 +62,8 @@
 (require 'yasnippet)
 (yas-global-mode 1 )
 
+;; auto complete
+(require 'auto-complete-settings)
 ;; java
 (require 'jdee)
 
@@ -54,13 +71,21 @@
 (require 'moe-theme)
 (setq moe-theme-highlight-buffer-id t)
 (moe-dark)
-(moe-theme-set-color 'green)
+(moe-theme-set-color 'cyan)
+
+;; text decoration
+(require 'font-lock)
+(global-hi-lock-mode nil)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(package-archives
+   (quote
+    (("gnu" . "http://elpa.gnu.org/packages/")
+     ("melpa-stable" . "http://stable.mepla.org/packages/"))))
  '(ansi-color-names-vector
    ["#303030" "#ff4b4b" "#d7ff5f" "#fce94f" "#5fafd7" "#d18aff" "#afd7ff" "#c6c6c6"])
  '(blink-cursor-mode nil)
