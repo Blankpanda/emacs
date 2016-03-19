@@ -4,7 +4,7 @@ linux/.emacs.d/auto-save-list
 windows/.emacs.d/emacs-backup/
 windows/.emacs.d/ac-comphist.dat
 windows/.emacs.d/auto-save-list
-windows/.python-enviornments/
-linux/.python-enviornments/
+windows/.emacs.d/.python-environments
+linux/.python-environments/
 
 \#*#\
