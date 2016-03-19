@@ -1,5 +1,10 @@
 linux/.emacs.d/emacs-backup/
+linux/.emacs.d/ac-comhist.dat
+linux/.emacs.d/auto-save-list
 windows/.emacs.d/emacs-backup/
 windows/.emacs.d/ac-comphist.dat
 windows/.emacs.d/auto-save-list
+windows/.python-enviornments/
+linux/.python-enviornments/
+
 \#*#\
