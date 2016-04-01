@@ -64,8 +64,6 @@
 
 ;; auto complete
 (require 'auto-complete-settings)
-;; java
-(require 'jdee)
 
 ;; theme
 (require 'moe-theme)
