@@ -3,7 +3,8 @@
   (add-to-list
    'package-archives
    '("melpa" . "http://melpa.org/packages/")
-   t)
+   '("gnu" . "http://elpa.gnu.org/packages/")
+   )
   (package-initialize))
 
 ;; settings folder
