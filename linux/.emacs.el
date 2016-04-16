@@ -6,16 +6,20 @@
    t)
   (package-initialize))
 
-
+;; settings folder
+(add-to-list 'load-path "~/.emacs.d/settings")
 
 ;; setup
 (setq initial-scratch-message "")
 (setq inhibit-startup-message t)
 (setq visible-bell t)
 (scroll-bar-mode 0)
-(menu-bar-mode 1 )
+(menu-bar-mode 0)
 (tool-bar-mode 0)
 (fringe-mode 4)
+
+;; scroll with mousewheel
+(mouse-wheel-mode 1)
 ;; highlight line in use
 (global-hl-line-mode 1)
 ;; stop cursor blink
@@ -30,56 +34,70 @@
 (modify-all-frames-parameters (list (cons 'cursor-type 'bar)))
 ;; new files open up in a seperate window
 ;; (setq pop-up-frames t)
-;; line numbers
-(global-linum-mode 1)
+;; NO line numbers
+(global-linum-mode 0)
+;; highlight parenthesis
+(require 'paren)
+(show-paren-mode 1)
+;; size of file
+(size-indication-mode 1)
+
 ;; make it so all emacs backusp go to a backups folder
 (setq backup-directory-alist '(("" . "~/.emacs.d/emacs-backup")))
 
-;; comment/uncomment keys
-(global-set-key (kbd "C-,") 'comment-region)
-(global-set-key (kbd "C-.") 'uncomment-region)
-
-
-;; easier windows movement (<ALT> + ARROW KEYS)
+;; easier windows movement (<SHIFT> + ARROW KEYS)
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings 'meta))
+
+
+;; ---- keybindings ----
+
+;; f4 to goto line
+(global-set-key [f4] 'goto-line)
+
+;; comment/uncomment region
+(global-set-key (kbd "C-.") 'comment-or-uncomment-region)
+
 
 ;; code snippets
 (require 'yasnippet)
 (yas-global-mode 1 )
 
 ;; auto complete mode
-(auto-complete-mode)
+(require 'auto-complete-settings)
 ;; java
 (require 'jdee)
 (setq jde-jalopy-option-command-line-args "-lWARN")
 
-
 ;;python
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
-
-
-;; c auto complete
-(require 'ac-c-headers')
-(add-hook 'c-mode-hook
-	  (lambda ()
-	    (add-to-list 'ac-sources 'ac-source-c-headers)
-	    (add-to-list 'ac-sources 'ac-source-c-header-symbols t)))
-
 ;; theme
-(require 'moe-theme)
-(setq moe-theme-highlight-buffer-id t)
-(moe-dark)
-(moe-theme-set-color 'cyan)
+;; (require 'moe-theme)
+;; (setq moe-theme-highlight-buffer-id t)
+;; (moe-dark)
+;; (moe-theme-set-color 'cyan)
+
+(load-theme 'monokai t)
+
+
+;; text
+(require 'font-lock)
+(global-hi-lock-mode nil)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#303030" "#ff4b4b" "#d7ff5f" "#fce94f" "#5fafd7" "#d18aff" "#afd7ff" "#c6c6c6"])
  '(blink-cursor-mode nil)
  '(cua-mode t nil (cua-base))
+ '(custom-safe-themes
+   (quote
+    ("f81933744f47a010213537575f84085af3937b27748b4f5c9249c5e100856fc5" default)))
+ '(org-agenda-files (quote ("~/shub.org")))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -87,3 +105,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Inconsolata" :foundry "unknown" :slant oblique :weight bold :height 113 :width normal)))))
+
