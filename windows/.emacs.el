@@ -3,8 +3,7 @@
   (add-to-list
    'package-archives
    '("melpa" . "http://melpa.org/packages/")
-   '("gnu" . "http://elpa.gnu.org/packages/")
-   )
+   t)
   (package-initialize))
 
 ;; settings folder
@@ -18,6 +17,8 @@
 (scroll-bar-mode 0)
 (menu-bar-mode 1)
 (tool-bar-mode 0)
+(set-fringe-mode 0)
+
 
 ;; scroll with mousewheel
 (mouse-wheel-mode 1)
@@ -36,7 +37,7 @@
 ;; new files open up in a seperate window
 ;; (setq pop-up-frames t)
 ;; line numbers
-(global-linum-mode 1)
+(global-linum-mode 0)
 ;; make it so all emacs backusp go to a backups folder
 (setq backup-directory-alist '(("" . "~/.emacs.d/emacs-backup")))
 ;; highlight parenthesis
@@ -65,12 +66,15 @@
 
 ;; auto complete
 (require 'auto-complete-settings)
+;; java
+(require 'jdee)
 
-;; theme
+;;theme
 (require 'moe-theme)
 (setq moe-theme-highlight-buffer-id t)
 (moe-dark)
 (moe-theme-set-color 'cyan)
+;;(load-theme 'monokai t)
 
 ;; text decoration
 (require 'font-lock)
@@ -78,30 +82,4 @@
 
 ;; fonts
 (set-face-attribute 'default nil :font "Consolas-10")
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-archives
-   (quote
-    (("gnu" . "http://elpa.gnu.org/packages/")
-     ("melpa-stable" . "http://stable.mepla.org/packages/"))))
- '(ansi-color-names-vector
-   ["#303030" "#ff4b4b" "#d7ff5f" "#fce94f" "#5fafd7" "#d18aff" "#afd7ff" "#c6c6c6"])
- '(blink-cursor-mode nil)
- '(cua-mode t nil (cua-base))
- '(custom-safe-themes
-   (quote
-    ("3a69621a68c2d3550a4c777ffc000e1ea66f5bc2f61112814c591e1bda3f5704" "b573eefcc1061bb8b3aec52b6ef20d92e39bdba69711f8fa59da5b740c118666" "f3d428cce84446ab2bf96619fb199b5cb1b7231278aa11e51b2a627bff6cb973" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "1ccf1153f9ed823ddc01eff1bebe711e7c0ab4f09f64dbde3be0c3aff860a274" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
- '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-
 
