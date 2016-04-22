@@ -12,7 +12,7 @@ Moe, moe, kyun!")
 (let ((class '((class color) (min-colors 89)))
       ;; Palette colors.
       (yellow-1 "#fce94f") (yellow-2 "#ffd700") (yellow-3 "#c4a000") (yellow-3-5 "#aaaa11") (yellow-4 "#875f00")
-      (orange-1 "#ffaf5f") (orange-2 "#0093D1") (orange-3 "#ff5d17") (orange-4 "#d75f00") (orange-5 "#af5f00")
+      (orange-1 "#ffaf5f") (orange-2 "#FFFFCC") (orange-3 "#ff5d17") (orange-4 "#d75f00") (orange-5 "#af5f00")
       (magenta-1 "#ff7bbb") (magenta-2 "#ff4ea3") (magenta-3 "#ff1f8b")
       (green-1 "#afff00") (green-2 "#a1db00") (green-3 "#5faf00") (green-4 "#008700") (green-5 "#005f00")
       (cyan-1 "#87ffff") (cyan-2 "#87d7af") (cyan-3 "#00d7af") (cyan-4 "#00ac8a") (cyan-5 "#5faf87") (cyan-6 "#005f5f") (cyan-7 "#236f73")
