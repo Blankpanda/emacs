@@ -14,8 +14,8 @@
 (setq inhibit-startup-message t)
 (setq visible-bell t)
 (scroll-bar-mode 0)
-(menu-bar-mode 0)
-(tool-bar-mode 0)
+(menu-bar-mode 1)
+(tool-bar-mode 1)
 (fringe-mode 4)
 
 ;; scroll with mousewheel
@@ -59,7 +59,7 @@
 ;; run compile [f5]
 (global-set-key [f5] 'compile)
 ;; shell command to M-1 instead of M-!
-(global-set (kbd "M-1") 'shell-command)
+(global-set-key (kbd "M-1") 'shell-command)
 
 ;; comment/uncomment region
 (global-set-key (kbd "C-.") 'comment-or-uncomment-region)
@@ -81,7 +81,7 @@
 ;; theme
  (require 'moe-theme)
  (setq moe-theme-highlight-buffer-id t)
- (moe-light)
+ (moe-dark)
  (moe-theme-set-color 'cyan)
 ;; text
 (require 'font-lock)
