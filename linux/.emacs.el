@@ -14,8 +14,8 @@
 (setq inhibit-startup-message t)
 (setq visible-bell t)
 (scroll-bar-mode 0)
-(menu-bar-mode 1)
-(tool-bar-mode 1)
+(menu-bar-mode 0)
+(tool-bar-mode 0)
 (fringe-mode 4)
 
 ;; scroll with mousewheel
