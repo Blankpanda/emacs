@@ -52,8 +52,14 @@
 
 ;; ---- keybindings ----
 
-;; f4 to goto line
+;; run the dired command [f1]
+(global-set-key [f1] 'dired)
+;; goto line [f4]
 (global-set-key [f4] 'goto-line)
+;; run compile [f5]
+(global-set-key [f5] 'compile)
+;; shell command to M-1 instead of M-!
+(global-set (kbd "M-1") 'shell-command)
 
 ;; comment/uncomment region
 (global-set-key (kbd "C-.") 'comment-or-uncomment-region)
@@ -73,14 +79,10 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 ;; theme
-;; (require 'moe-theme)
-;; (setq moe-theme-highlight-buffer-id t)
-;; (moe-dark)
-;; (moe-theme-set-color 'cyan)
-
-(load-theme 'monokai t)
-
-
+ (require 'moe-theme)
+ (setq moe-theme-highlight-buffer-id t)
+ (moe-light)
+ (moe-theme-set-color 'cyan)
 ;; text
 (require 'font-lock)
 (global-hi-lock-mode nil)
