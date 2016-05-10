@@ -78,11 +78,12 @@
 ;;python
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
+
+
+
 ;; theme
- (require 'moe-theme)
- (setq moe-theme-highlight-buffer-id t)
- (moe-dark)
- (moe-theme-set-color 'cyan)
+(load-theme 'grandshell t)
+
 ;; text
 (require 'font-lock)
 (global-hi-lock-mode nil)
@@ -98,7 +99,7 @@
  '(cua-mode t nil (cua-base))
  '(custom-safe-themes
    (quote
-    ("f81933744f47a010213537575f84085af3937b27748b4f5c9249c5e100856fc5" default)))
+    ("6c62b1cd715d26eb5aa53843ed9a54fc2b0d7c5e0f5118d4efafa13d7715c56e" "f81933744f47a010213537575f84085af3937b27748b4f5c9249c5e100856fc5" default)))
  '(org-agenda-files (quote ("~/shub.org")))
  '(tool-bar-mode nil))
 (custom-set-faces
