@@ -1,3 +1,5 @@
+;; a lot of credit goes towards Casey Muratori for some of the functions in this file
+
 (when (>= emacs-major-version 24)
  (require 'package)
   (add-to-list
@@ -14,18 +16,28 @@
 (setq inhibit-startup-screen 1)
 (setq inhibit-startup-message t)
 (setq visible-bell t)
+(setq undo-limit 20000000)
+(setq undo-strong-limit 40000000)
 (scroll-bar-mode 0)
-(menu-bar-mode 1)
+(menu-bar-mode 0)
 (tool-bar-mode 0)
 (set-fringe-mode 0)
 
-
+;;split on startup
+(split-window-horizontally)
+; Smooth scroll
+(setq scroll-step 3)
+; Clock
+(display-time)
 ;; scroll with mousewheel
 (mouse-wheel-mode 1)
 ;; highlight line in use
 (global-hl-line-mode 1)
+(set-face-background 'hl-line "red")
+(set-face-background 'region "red")
 ;; stop cursor blink
 (blink-cursor-mode 0)
+(set-cursor-color "red")
  ;; normal copy/cut/paste
 (cua-mode 1)
  ;; auto complete another parenthesis when one is typed
@@ -46,6 +58,13 @@
 (setq show-paren-style 'expression)
 ;; size indication of file
 (size-indication-mode 1)
+
+
+(load-library "view")
+(require 'cc-mode)
+(require 'ido)
+(require 'compile)
+(ido-mode t)
 
 ;; ------ keybindings -------
 
@@ -87,19 +106,112 @@
 
 ;; fonts
 (set-face-attribute 'default nil :font "Consolas-10")
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#5f5f5f" "#ff4b4b" "#a1db00" "#fce94f" "#5fafd7" "#d18aff" "#afd7ff" "#ffffff"])
- '(custom-safe-themes
-   (quote
-    ("14aa6c39853d8bab802750a7451fd652f1000e44511cc8216fc95c008e6f71ad" "93004ad952e1d180ef6bd89f3adcb0061dd29c1b63afbebb1325f082b3bd7a36" "a53fc4c86b48e0501f738e0c7f9f42a04029cfbefa26d5d588fe01d48af4d180" "19ae9e7a29410830ef2f4b778bf911374daf8838c578f4768827d26fc2956fb7" "41d0400b0d0e6b438707c9978e6e5e0a5c7abb9dfbd879defb041a78f0c746be" "28111c756a45fc7f346fd1830c0d1cba0cd1178d3c7080405705eb836dca4c16" "fd09e842bb1336dd3d7ec748e297eb90bd5e0165757d3fbc1c14ad47f1c467df" "0323cc2d54bcd8944bc49329eacc16fac73b0cc124e7b7f0a486845b9ab052f1" "9aa56a924d0f6e3ae4bc505acab1620b0e54dc7019ca3cd7ba77d5420cf1e036" "a4210e3ca7b71d304f46c504f97b475b05b8fd09707bb5402b049a108ff56fb6" "c57aa5f299ca66ff103714850775196f1dcd962c74b3d74c6631de68c79b8d0a" "ce92af99cd38ceb2cd25b13f00df06c98d979796644e2491e40e5520550cd43e" "239e94b07e580edd7981381d68a15bfa2de20d5c40da7c9e6214b8ac8f72fc44" "71bba6b310fc126899baf0f7d51ae2377829c143e4e9ecdfa792e84767e6ee19" "085c437f703a58bc033464459e316540e0a26c86248767e5b7240ad0d10bde97" "8814d882389a83f10da0301da4abb0705ee7c946beafbd50d3d9aaaf0523d69c" "b573eefcc1061bb8b3aec52b6ef20d92e39bdba69711f8fa59da5b740c118666" default))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;; 4-space tabs
+(setq tab-width 4
+      indent-tabs-mode nil)
+
+
+; Bright-red TODOs
+ (setq fixme-modes '(c++-mode c-mode emacs-lisp-mode python-mode))
+ (make-face 'font-lock-fixme-face)
+ (make-face 'font-lock-note-face)
+ (mapc (lambda (mode)
+	 (font-lock-add-keywords
+	  mode
+	  '(("\\<\\(TODO\\)" 1 'font-lock-fixme-face t)
+            ("\\<\\(NOTE\\)" 1 'font-lock-note-face t)
+	    ("\\#\\(TODO\\)" 1 'font-lock-fixme-face t))))
+	fixme-modes)
+ (modify-face 'font-lock-fixme-face "Red" nil nil t nil t nil nil)
+ (modify-face 'font-lock-note-face "Dark Green" nil nil t nil t nil nil)
+ 
+
+
+;; ---- languages ----
+;; C/C++
+(defconst petar-big-fun-c-style
+  '((c-electric-pound-behavior   . nil)
+    (c-tab-always-indent         . t)
+    (c-comment-only-line-offset  . 0)
+    (c-hanging-braces-alist      . ((class-open)
+                                    (class-close)
+                                    (defun-open)
+                                    (defun-close)
+                                    (inline-open)
+                                    (inline-close)
+                                    (brace-list-open)
+                                    (brace-list-close)
+                                    (brace-list-intro)
+                                    (brace-list-entry)
+                                    (block-open)
+                                    (block-close)
+                                    (substatement-open)
+                                    (statement-case-open)
+                                    (class-open)))
+    (c-hanging-colons-alist      . ((inher-intro)
+                                    (case-label)
+                                    (label)
+                                    (access-label)
+                                    (access-key)
+                                    (member-init-intro)))
+    (c-cleanup-list              . (scope-operator
+                                    list-close-comma
+                                    defun-close-semi))
+    (c-offsets-alist             . ((arglist-close         .  c-lineup-arglist)
+                                    (label                 . -4)
+                                    (access-label          . -4)
+                                    (substatement-open     .  0)
+                                    (statement-case-intro  .  4)
+                                    (statement-block-intro .  c-lineup-for)
+                                    (case-label            .  4)
+                                    (block-open            .  0)
+                                    (inline-open           .  0)
+                                    (topmost-intro-cont    .  0)
+                                    (knr-argdecl-intro     . -4)
+                                    (brace-list-open       .  0)
+                                    (brace-list-intro      .  4)))
+    (c-echo-syntactic-information-p . t))
+    "petar's Big Fun C++ Style")
+
+
+;; ----- functions -----
+(defun make-header ()
+  "Format the give file as a header file"
+  (interactive)
+  (setq BaseFileName (file-name-sans-extension (file-name-nondirectory buffer-file-name)))
+  (insert "#IFNDEF ")
+  (insert BaseFileName)
+  (insert "_h_\n")
+  (insert "#define ")
+  (insert BaseFileName)
+  (insert "_h_\n")
+  (insert "\n")
+  (insert "/* header definitions */")
+  (insert "\n")
+  (insert "#endif")
+  )
+
+(defun replace-string (FromString ToString)
+  "Replace a string with another string."
+  (interactive "sReplace: \nsReplace: %s  With: ")
+  (save-excursion
+    (replace-string FromString ToString)
+    ))
+(setq max-lisp-eval-depth 10000)
+(define-key global-map [f8] 'replace-string)
+
+;; experimental functions
+(defun previous-blank-line ()
+  (interactive)
+  (search-backward-regexp "^[ \t]*\n")
+  )
+
+(defun next-blank-line ()
+  (interactive)
+  (forward-line)
+  (search-forward-regexp "^[ \t]*\n")
+  (forward-line -1)
+  )
+
+(global-set-key (kbd "M-n") 'next-blank-line)
+(global-set-key (kbd "M-p") 'previous-blank-line)
