@@ -32,9 +32,7 @@
 ;; scroll with mousewheel
 (mouse-wheel-mode 1)
 ;; highlight line in use
-(global-hl-line-mode 1)
-(set-face-background 'hl-line "red")
-(set-face-background 'region "red")
+;(global-hl-line-mode 1)
 ;; stop cursor blink
 (blink-cursor-mode 0)
 (set-cursor-color "red")
@@ -81,6 +79,8 @@
 (global-set-key (kbd "C-,") 'comment-region)
 (global-set-key (kbd "C-.") 'uncomment-region)
 
+;; stop back space from copying
+(global-set-key "\M-\d" 'backward-kill-word)
 
 ;; easier windows movement (<ALT> + ARROW KEYS)
 (when (fboundp 'windmove-default-keybindings)
@@ -215,3 +215,19 @@
 
 (global-set-key (kbd "M-n") 'next-blank-line)
 (global-set-key (kbd "M-p") 'previous-blank-line)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
