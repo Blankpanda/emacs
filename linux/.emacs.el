@@ -38,7 +38,7 @@
 (electric-pair-mode 1)
  ;; text wrapping
 (global-visual-line-mode 1)
-;; i-beam cursorg
+;; i-beam cursor
 (modify-all-frames-parameters (list (cons 'cursor-type 'bar)))
 ;; new files open up in a seperate window
 ;; (setq pop-up-frames t)
@@ -47,7 +47,7 @@
 ;; highlight parenthesis
 (require 'paren)
 (show-paren-mode t)
-(setq show-paren-style 'expression)
+;(setq show-paren-style ')
 ;; size of file
 (size-indication-mode 1)
 
@@ -98,10 +98,10 @@
 
 ;; text
 (require 'font-lock)
-(global-hi-lock-mode nil)
+(global-hi-lock-mode 1)
 
 ;; fonts
-(set-face-attribute 'default nil :font "Inconsolata-10")
+(set-face-attribute 'default nil :font "Inconsolata-11")
 
 (setq tab-width 4
       indent-tabs-mode nil)
