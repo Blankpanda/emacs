@@ -128,6 +128,7 @@
 
 
 ;; ---- languages ----
+
 ;; C/C++
 (defconst petar-big-fun-c-style
   '((c-electric-pound-behavior   . nil)
