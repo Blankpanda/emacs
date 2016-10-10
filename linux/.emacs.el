@@ -65,6 +65,7 @@
 (ido-mode t)
 
 ;; ---- keybindings ----
+(global-set-key (kbd "TAB") 'tab-to-tab-stop)
 
 ;; run the dired command [f1]
 (global-set-key [f1] 'dired)
