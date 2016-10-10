@@ -1,0 +1,274 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/CalebsComp/AppData/" . "Local/")
+ ("c:/Users/CalebsComp/AppData/Roaming/.emacs.d/" . "settings/")
+ ("e:/" . "egrnotes/")
+ ("c:/Users/CalebsComp/Documents/project/app/" . "font/")
+ ("c:/Users/CalebsComp/Documents/project/" . "database/")
+ ("c:/Users/CalebsComp/Documents/reddit-image-retriever/src/" . "95vWM/")
+ ("c:/Users/CalebsComp/workspace/Lab1/" . "src/")
+ ("c:/Users/CalebsComp/workspace/" . "Lab1/")
+ ("c:/Users/CalebsComp/Documents/dcscw/dcscw/dcscw/bin/Debug/" . "Test/")
+ ("c:/Users/CalebsComp/Documents/dcscw/dcscw/dcscw/bin/" . "Debug/")
+ ("c:/Users/CalebsComp/Documents/dcscw/dcscw/dcscw/" . "bin/")
+ ("c:/Users/CalebsComp/Documents/dcscw/dcscw/" . "dcscw/")
+ ("c:/Users/CalebsComp/Documents/dcscw/" . "dcscw/")
+ ("c:/Users/CalebsComp/Documents/reddit-image-retriever/" . "src/")
+ ("c:/Users/CalebsComp/Documents/Haskell/Book/" . "ch03/")
+ ("c:/Users/CalebsComp/Documents/Haskell/CIS-194/" . "Homework1/")
+ ("c:/Users/CalebsComp/Documents/Haskell/" . "Book/")
+ ("c:/Users/CalebsComp/Documents/ip-to-location/" . "src/")
+ ("c:/Users/CalebsComp/Documents/littlemacs/" . "include/")
+ ("c:/Users/CalebsComp/Documents/scripts-and-dots/scripts/" . "python/")
+ ("c:/Users/CalebsComp/Documents/scripts-and-dots/" . "scripts/")
+ ("c:/Users/CalebsComp/AppData/Roaming/" . ".emacs.d/")
+ ("c:/Users/CalebsComp/Documents/nodepractice/" . "practice/")
+ ("c:/Users/CalebsComp/Documents/" . "project/")
+ ("c:/Users/CalebsComp/Documents/GrandExchangeWrapper/build/lib/" . "gew/")
+ ("c:/Users/CalebsComp/Documents/GrandExchangeWrapper/build/" . "lib/")
+ ("c:/Users/CalebsComp/Documents/GrandExchangeWrapper/" . "gew/")
+ ("c:/Users/" . "CalebsComp/")
+ ("c:/Users/CalebsComp/Documents/chat/Server/Chat Client/bin/" . "Debug/")
+ ("c:/Users/CalebsComp/Documents/chat/Server/Chat Client/" . "bin/")
+ ("c:/Users/CalebsComp/Documents/chat/Server/" . "Chat Client/")
+ ("c:/Users/CalebsComp/Documents/chat/" . "FileClientSever/")
+ ("c:/Users/CalebsComp/Desktop/" . "PyInstaller-3.1.1/")
+ ("c:/Users/CalebsComp/" . "Desktop/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/CalebsComp/AppData/Roaming/.emacs.d/"
+ "c:/Users/CalebsComp/AppData/Roaming/.emacs.d/scripts/"
+ "c:/Users/CalebsComp/AppData/Roaming/"
+ "e:/egrnotes/"
+ "c:/Users/CalebsComp/Desktop/"
+ "c:/Users/CalebsComp/"
+ "c:/Users/CalebsComp/Documents/project/database/"
+ "c:/Users/CalebsComp/Documents/project/views/"
+ "c:/Users/CalebsComp/Documents/project/controllers/"
+ "c:/Users/CalebsComp/Documents/project/models/"
+ "c:/Users/CalebsComp/Documents/project/app/font/"
+ "c:/Users/CalebsComp/Documents/project/app/js/"
+ "c:/Users/CalebsComp/Documents/project/app/css/"
+ "c:/Users/CalebsComp/Documents/project/api/"
+ "c:/Users/CalebsComp/Documents/reddit-image-retriever/src/"
+ "c:/Users/CalebsComp/Documents/scripts-and-dots/scripts/python/"
+ "c:/Users/CalebsComp/Documents/reddit-image-retriever/src/95vWM/"
+ "c:/Users/CalebsComp/Documents/dTesting/"
+ "c:/Users/CalebsComp/Documents/dcscw/dcscw/dcscw/bin/Debug/Test/"
+ "c:/Users/CalebsComp/Documents/"
+ "c:/Users/CalebsComp/Documents/python book exercises/"
+ "c:/Users/CalebsComp/workspace/Lab1/src/"
+ "c:/Users/CalebsComp/Documents/testing/"
+ "c:/Users/CalebsComp/Documents/Scripts/"
+ "c:/Users/CalebsComp/Documents/gelget/"
+ "c:/Users/CalebsComp/Documents/Haskell/Book/ch03/"
+ "c:/Users/CalebsComp/Documents/Haskell/Projects/"
+ "c:/Users/CalebsComp/Documents/Haskell/CIS-194/Homework1/"
+ "c:/Users/CalebsComp/Documents/Haskell/"
+ "c:/Users/CalebsComp/Documents/ip-to-location/src/"
+ "c:/Users/CalebsComp/Documents/littlemacs/src/"
+ "c:/Users/CalebsComp/Documents/littlemacs/include/"
+ "c:/Users/CalebsComp/Documents/littlemacs/build/"
+ "c:/Users/CalebsComp/Documents/littlemacs/"
+ "c:/Users/CalebsComp/Documents/GrandExchangeWrapper/gew/"
+ "c:/Users/CalebsComp/Documents/Cheeple/"
+ "c:/Users/CalebsComp/Documents/py/"
+ "c:/Users/CalebsComp/Documents/nodepractice/practice/"
+ "c:/Users/CalebsComp/Documents/nodepractice/notes/"
+ "c:/Users/CalebsComp/Documents/nodepractice/"
+ "c:/Users/CalebsComp/Documents/portfolio/"
+ "c:/Users/CalebsComp/Documents/cram/done/"
+ "c:/Users/CalebsComp/Documents/cram/"
+ "c:/Users/CalebsComp/Documents/GrandExchangeWrapper/build/lib/gew/"
+ "c:/Users/CalebsComp/Documents/chat/FileClientSever/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "org-export.el"
+ ".emacs.el"
+ "CompSciLecture.txt"
+ "MechEngineering.txt"
+ "CivilLecture.txt"
+ "test.py"
+ "CookOutCalculator.java"
+ "query.php"
+ "dbConfig.php"
+ "db.php"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/CalebsComp/AppData/Roaming/.emacs.d/" (22523 56402 0 0) "url/" "snippets/" "settings/" "semanticdb/" "scripts/" "ido.last" "gcl.txt" "emacs-backup/" "elpa/" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".python-environments/" ".emacs.d/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/project/controllers/" (22515 60323 0 0) "sender.php" "retriever.php" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/project/database/" (22515 60221 0 0) "query.php" "dbConfig.php" "db.php" "../" "./")
+
+ ("c:/Users/CalebsComp/Desktop/" (22523 52389 0 0) "~$lebEllisFirstDraft.docx" "WinRAR.lnk" "VisualBoyAdvance.exe" "Visual Studio 2013.lnk" "Ventrilo.lnk" "test.py" "SpeedSouls - Save Organizer.exe" "osu!.lnk" "OSBuddy.exe" "mpv - Shortcut.lnk" "MA3CalebEllisFinalDraft.docx" "MA2CalebEllisSecondDraft.docx" "MA1CalebEllisFirstDraft.docx" "lol.launcher.admin - Shortcut.lnk" "Grisaia no Kajitsu.lnk" "Git Shell.lnk" "Emacs.lnk" "Emacs - debug.lnk" "egrMajorAssignment/" "drawlog.txt" "Discord.lnk" "desktop.ini" "coolstuff.txt" "CookOutCalculator.java" "Computer Management.lnk" "Atom.lnk" "../" "./")
+
+ ("c:/Users/CalebsComp/AppData/Local/" (22522 35491 0 0) "YoYo_Games_Ltd/" "WSplitTimer/" "Windows Live/" "WarThunder/" "VirtualStore/" "UnrealHeaderTool/" "UnrealEngineLauncher/" "UnrealEngine/" "Unity/" "Ubisoft Game Launcher/" "The Witcher/" "TERA/" "Temporary Internet Files/" "Temp/" "Steam/" "SquirrelTemp/" "Spotify/" "SniperV2/" "SlimWare Utilities Inc/" "Skyrim/" "Skype/" "signal studios/" "RzStats/" "RStudio-Desktop/" "ROR_GMS_controller/" "Risk_of_Rain/" "Risen/" "resmon.resmoncfg" "recently-used.xbel" "Razer_Inc/" "Razer/" "qBittorrent/" "Python Tools/" "PunkBuster/" "Programs/" "pip/" "PAYDAY/" "Packages/" "Package Cache/" "Origin/" "Ori and the Blind Forest/" "Oblivion/" "NVIDIA Corporation/" "NVIDIA/" "NuGet/" "NexonLauncher/" "NetBeans/" "NBGI/" "Mozilla/" "Microsoft/" "Macromedia/" "LogMeIn Hamachi/" "LogMeIn/" "Kingsoft/" "IconCache.db" "History/" "GWX/" "gtk-2.0/" "Google/" "Glyph/" "GitHub/" "gegl-0.2/" "Game Dev Tycoon - Steam/" "fontconfig/" "FluxSoftware/" "FalloutNV/" "Fallout4/" "Ereve/" "EpicGamesLauncher/" "EmieUserList/" "EmieSiteList/" "EmieBrowserModeList/" "e-academy Inc/" "Dropbox/" "DOSBox/" "Discord/" "Diagnostics/" "Deployment/" "CrashRpt/" "CrashDumps/" "CodeMaid/" "Chromium/" "CEF/" "Blizzard Entertainment/" "Blizzard/" "Black_Tree_Gaming/" "BlackDesertOnline/" "Battle.net/" "atom/" "ATI/" "assembly/" "Apps/" "Application Data/" "Android/" "AMD/" "Adobe/" "Activision/" "4A Games/" "../" "./")
+
+ ("c:/Users/CalebsComp/AppData/" (21170 16680 0 0) "Roaming/" "LocalLow/" "Local/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/" (22523 55656 0 0) "zip_ck/" "Yuri/" "Visual Studio 2013/" "VirtualBox-4.3.26-98988-Win.exe" "Videos/" "TweetrBot/" "touhou/" "thoughts/" "thing.txt" "Textbooks/" "testing/" "tera.mp4" "speed running/" "Software development/" "SimCity 4/" "Shortcut to SecureDownloadManager.exe.lnk" "session-transfer/" "Senior Capstone Project/" "scripts-and-dots/" "Scripts/" "School/" "scheme/" "rufus_files/" "rufus-2.2.exe" "reddit-image-retriever/" "re.txt" "R i386 3.2.2.lnk" "R/" "Python 3.4 - Shortcut.lnk" "pydarkroom/" "project/" "PowerISO.lnk" "portfolio/" "Pictures/" "PDFs/" "Overwatch/" "other/" "Oracle VM VirtualBox.lnk" "Open Broadcaster Software.lnk" "OneNote Notebooks/" "Notepad2/" "nodepractice/" "NBGI/" "My Videos/" "My Pictures/" "My Music/" "My Games/" "My Curse/" "movies/" "manga/" "machine learning/" "MA1sampleAnalysisCalebEllis.docx" "livesplit/" "littlemacs/" "Linux distro iso/" "light novels/" "learning-Cplusplus/" "League of Legends/" "japan_notes.org" "ip-to-location/" "IISExpress/" "HSchool/" "Haskell/" "halo/" "GrandExchangeWrapper/" "GitHub/" "get-yuri.py" "gelget/" "Games/" "folders/" "FileZilla Server Interface.lnk" "feels.wps" "englishVideoNotes.org" "emulation/" "emacsconf/" "EllisCaleb.doc" "EGR11MajorsWriteUp.docx" "EGR111MajorsNotes_Bio.docx" "EGR111MajorsNotes.docx" "EGR111MajorNotes_Mech.docx" "EGR111MajorNotes_Electrical.docx" "EGR111MajorNotes_CompSci.docx" "EGR111MajorNotes_Civil.docx" "Dolphin Emulator/" "desktop.ini" "desktop files from old computer/" "dcscw/" "Custom Office Templates/" "cram/" "CompTIA A+ ce certificate.pdf" "Cheeple/" "chat/" "CDS/" "CalebEllisWheelChairDesignProcess.doc" "bootstrap-3.3.6-dist/" "BnS/" "Black Desert/" "anime/" "../" "./")
+
+ ("c:/Users/CalebsComp/AppData/Roaming/.emacs.d/settings/" (22302 34613 0 0) "auto-complete-settings.el" "#auto-complete-settings.el#" "../" "./")
+
+ ("e:/egrnotes/" (22523 36888 0 0) "MechEngineering.txt" "ElectricalCompEngineeringLecture.txt" "CompSciLecture.txt" "CivilLecture.txt" "BioEng.txt" "../" "./")
+
+ ("c:/Users/CalebsComp/" (22520 21341 0 0) "workspace/" "VirtualBox VMs/" "Videos/" "Tracing/" "test.c" "test/" "Templates/" "Start Menu/" "Snapshots/" "SkyDrive/" "SendTo/" "Searches/" "Saved Games/" "save.p" "Recent/" "README" "random.dat" "PrintHood/" "Pictures/" "OSBuddy/" "OneDrive/" "omnisharp-tmp-file.cs" "ntuser.ini" "NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TM.blf" "NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.blf" "NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.2.regtrans-ms" "NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.1.regtrans-ms" "NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.0.regtrans-ms" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "node_modules/" "NetHood/" "My Documents/" "Music/" "Local Settings/" "Links/" "jagex_cl_runescape_LIVE_BETA.dat" "jagex_cl_runescape_LIVE.dat" "jagex_cl_oldschool_LIVE.dat" "jagexcache/" "jagexappletviewer.preferences" "IdeaProjects/" "goat/" "Favorites/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "ClionProjects/" "Application Data/" "AppData/" "AndroidStudioProjects/" "Anaconda3/" "a.exe" ".yjp/" ".VirtualBox/" ".thumbnails/" ".ssh/" ".python_history" ".pypirc" ".PyCharm50/" ".oracle_jre_usage/" ".node_repl_history" ".nbi/" ".mongorc.js" ".matplotlib/" ".lesshst" ".jmc/" ".idlerc/" ".IdeaIC14/" ".hxcpp_config.xml" ".gradle/" ".gitconfig" ".gimp-2.8/" ".eclipse/" ".drjava" ".designer/" ".dbshell" ".continuum/" ".config/" ".clion10/" ".atom/" ".AndroidStudio1.5/" ".android/" "#test.c#" "../" "./")
+
+ ("c:/Users/CalebsComp/Downloads/" (22523 46760 0 0) "YellowPrestigiousCatfish.webm" "Yec5NL8.jpg" "y8I2wm0.jpg" "XuDQq9J.png" "xhnpW36.png" "WxdwxnE.jpg" "woQIyEB.jpg" "Windows Server 2012 R2 (x64) - DVD (English)/" "vocaloid duid/" "V5LpQut.jpg" "U80y6Tl.jpg" "tumblr_o4ebc0ayyi1v0cl9no1_500.gif" "tumblr_ncryh23GAr1tu1seco1_1412181833_cover.jpg" "tpbpjn.mp4" "Spongebob Squarepants/" "SOngs/" "Setup.X86.en-US_O365ProPlusRetail_0c421cd0-db49-4230-bed1-a82f3a738661_TX_PR_b_32_.exe" "selenium-server-standalone-3.0.0-beta2.jar" "school work/" "runtime/" "RQhCxUP.jpg" "Resume of Caleb Ellis.pdf" "Rem_Zero - Rem NSFW Album - Imgur.zip" "oXcd5q2.png" "OSBuddy.exe" "nm9qfq8buaox.jpg" "New folder/" "mpv/" "MFpwugE.png" "MATH153_SYLLABUS_FALL_2016_530.doc" "Mass. Health Insurance Card (Ellis, Caleb).pdf" "Majors assignment final.docx" "Major Assignment 1 Sample 1.docx" "Major Assignment 1 General Checklist.docx" "LHqyB7q.jpg" "Katawa Shoujo/" "jtd3yX1.jpg" "Hugging-her-cat.1515.jpg" "Hanekawa.Tsubasa.full.1471404.jpg" "gun.zip" "Gun.iso" "Gun (USA).iso" "Gun (USA).7z" "Grisaia + english patch/" "Geh0iw9.png" "Firefox Setup 48.0.2.exe" "Firefox Setup 1.0PR.exe" "FHARaHb.jpg" "EMgK2aZ.jpg" "emacs/" "eefj5s1wybox.jpg" "Dreamspark/" "desktop.ini" "cute/" "Conflict - Desert Storm (USA) (v1.00).iso" "Conflict - Desert Storm (USA) (v1.00).7z" "CodeofConduct.docx" "cms-sample.pdf" "certificate.pdf" "Cabela's Big Game Hunter - 2005 Adventures (USA).iso" "Cabela's Big Game Hunter - 2005 Adventures (USA).7z" "Battalion Wars (USA).iso" "Battalion Wars (USA).7z" "bakemonogatari-wallpapers/" "906r4k2vxaox.png" "8KlvCbj.jpg" "87JI2rP.jpg" "6cJsPoX.jpg" "5Rz4CEb.jpg" "4IvXEyw.jpg" "3hgHXeS.jpg" "217629_193632047341425_1459816_n.jpg" "185459.jpg" "16zlx8k7xnpx.jpg" "10.04 Class Assignment.docx" "+RGB+by+Chippy.osk" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/project/" (22515 60207 0 0) "views/" "models/" "database/" "controllers/" "app/" "api/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/project/views/" (22515 60189 0 0) "dataRender.php" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/project/models/" (22515 60134 0 0) "data.php" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/cram/" (22506 44252 0 0) "responsive_design_notes.org" "responsive_design_cram/" "jquery_notes.org" "javascript_notes.org" "fuck/" "done/" "cram_html/" "bootstrap_notes.org" "../" "./")
+
+ ("c:/Users/CalebsComp/AppData/Roaming/" (22510 49513 0 0) "Yacht Club Games/" "wps/" "Wireshark/" "WinRAR/" "vlc/" "Ventrilo/" "Unreal Engine/" "Ubisoft/" "TS3Client/" "The Creative Assembly/" "Tera_Awesomium/" "Sun/" "StepMania 5/" "StardewValley/" "Spotify/" "SpeedRunnersLog.txt" "Skype/" "Shooter/" "ShanghaiAlice/" "RStudio/" "Rogue Legacy/" "Riot Games/" "RenPy/" "raidcall/" "Racket/" "QtProject/" "qBittorrent/" "pyinstaller/" "PowerISO/" "Origin/" "OBS/" "NVIDIA/" "NuGet/" "npm-cache/" "npm/" "Notepad++/" "Nitroplus/" "NexonLauncher/" "New Text Document.txt" "NetBeans/" "NekoWorks/" "mpv/" "Mozilla/" "Mount&Blade Warband/" "moeditor/" "MMFApplications/" "Microsoft Games/" "Microsoft FxCop/" "Microsoft/" "Macromedia/" "LolClient/" "Kingsoft/" "JetBrains/" "Jedi/" "java/" "Injustice/" "Identities/" "Gyazo/" "GitHub/" "ghc/" "Gensokyo.org/" "GameMaker/" "Frontwing/" "fltk.org/" "FileZilla Server/" "e-academy Inc/" "Dropbox/" "discord/" "desunoya/" "DarkSoulsIII/" "DarkSoulsII/" "Curse Client/" "Curse Advertising/" "Curse/" "Continuum/" "ClassicShell/" "cabal/" "Braid/" "Brackets/" "Bioshock2Steam/" "Battle.net/" "Awesomium/" "Atom/" "ATI/" "AnnkakeSpa/" "Adobe/" ".python_history" ".pypirc" ".mono/" ".minecraft/" ".history" ".emacsHHH.el" ".emacs.el~" ".emacs.el" ".emacs.d/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/ip-to-location/src/" (22514 64181 0 0) "__pycache__/" "website.py" "us.gif" "main.py" "locator.py" "jp.gif" "gui.py" "flags.py" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/reddit-image-retriever/src/" (22506 43821 0 0) "todo.txt" "reddit.py" "imgur.py" "entry.py" "downloader.py" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/project/app/font/" (22515 60070 0 0) "foo.svg" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/project/app/js/" (22515 60061 0 0) "newArticle.js" "config.js" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/project/app/css/" (22515 60042 0 0) "style.css" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/project/app/" (22515 59993 0 0) "js/" "font/" "css/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/project/api/" (22515 60025 0 0) "api.php" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/reddit-image-retriever/src/95vWM/" (22506 41262 0 0) "0.jpg" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/dTesting/" (22506 39178 0 0) "Main.cs" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/dcscw/dcscw/dcscw/bin/Debug/Test/" (22506 37492 0 0) "TestClass.cs" "test1/" "Main.cs" "bin/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/dcscw/dcscw/dcscw/bin/Debug/" (22506 36942 0 0) "Test/" "dcscw.vshost.exe.manifest" "dcscw.vshost.exe.config" "dcscw.vshost.exe" "dcscw.pdb" "dcscw.exe.config" "dcscw.exe" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/dcscw/dcscw/dcscw/" (22506 38029 0 0) "Searcher.cs" "Properties/" "Program.cs" "path.cs" "Parser.cs" "obj/" "dcscw.csproj.user" "dcscw.csproj" "Compile.cs" "Command.cs" "bin/" "App.config" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Scripts/" (22479 337 0 0) "New folder/" "mal-info.py" "line.py" "filenum.py" "decant.py" "../" "./")
+
+ ("c:/Users/CalebsComp/workspace/Lab1/src/" (22485 54732 0 0) "Colors.java" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/python book exercises/" (22088 45398 0 0) "testing.py" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/cram_html/" (22276 9615 0 0) "js/" "index.html" "css/" "../" "./")
+
+ ("c:/Users/CalebsComp/workspace/Lab1/" (22485 52269 0 0) "src/" "bin/" ".settings/" ".project" ".classpath" "../" "./")
+
+ ("c:/Users/CalebsComp/workspace/" (22485 52269 0 0) "Lab1/" "JavaLearn/" ".metadata/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/testing/" (22302 43831 0 0) "test.py" "iris.py" "iris.csv" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/dcscw/dcscw/dcscw/bin/" (22456 61756 0 0) "Release/" "Debug/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/dcscw/dcscw/" (22456 61756 0 0) "dcscw.v12.suo" "dcscw.sln" "dcscw/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/dcscw/" (22456 61847 0 0) "dcscw/" ".git/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/gelget/" (22429 19974 0 0) "__pycache__/" "watcher.py" "scrapper.py" "query.py" "downloader.py" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Yuri/" (22325 4901 0 0) "Pictures/" "Doujinshis/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/reddit-image-retriever/" (22072 6260 0 0) "src/" "README.md" ".idea/" ".git/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/scripts-and-dots/scripts/python/" (22404 10989 0 0) "vidc.py" "mal-info.py" "line.py" "imagenum.py" "filenum.py" "dlimgur.py" "dir-make.py" "decant.py" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/scripts-and-dots/" (22404 10989 0 0) "scripts/" "README.md" "mpv.conf" "linux/" "atom/" ".gitignore" ".git/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Haskell/Book/ch02/" (21850 14266 0 0) "Tuple.hs" "RoundToEven.hs" "myDrop.hs" "lastButOne.hs" "add.hs" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Haskell/Book/ch01/" (21846 40416 0 0) "WC.hs" "quux.txt" "myDrop.hs" "add.hs" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Haskell/Projects/" (22404 12050 0 0) "web-scrape.hs" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Haskell/CIS-194/Homework1/" (22404 11687 0 0) "validate.o" "validate.hs" "validate.hi" "validate.exe" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Haskell/" (22404 11789 0 0) "repo/" "Projects/" "CIS-194/" "Book/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Haskell/Book/" (22164 15813 0 0) "ch03/" "ch02/" "ch01/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Haskell/Book/ch03/" (21862 23722 0 0) "Tree.hs" "RNGtest.hs" "RecordSyntax.hs" "MySecond.hs" "myLast.hs" "MyCaladarTime.hs" "Lending.hs" "fizzBuzz.hs" "farc.hs" "BookStore.hs" "add.hs" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Haskell/CIS-194/" (22165 22302 0 0) "ref/" "README.md" "Notes/" "Homework1/" ".git/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/ip-to-location/" (22090 19542 0 0) "src/" "README.md" ".git/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/portfolio/" (22356 51076 0 0) "main.css" "js/" "index.html" "fonts/" "css/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Cheeple/" (22393 20901 0 0) "wcount.c" "test2.cpp" "test.txt" "test.cpp" "tarith.c" "ptr.c" "power.c" "plusequsl.c" "pal.c" "linelen.c" "helloworld.c" "hello.c" "getchar.c" "farcWithConstantsFunc.c" "farcWithConstants.c" "farc.c" "eofchar.c" "clean.c" "ccount.c" "arr.c" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/littlemacs/build/" (22390 64136 0 0) "clean.bat" "build.bat" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/littlemacs/src/" (22390 64038 0 0) "win32_main.cpp" "directory.h" "directory.cpp" "debugLogger.h" "debugLogger.cpp" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/littlemacs/include/" (22390 59023 0 0) "dirent.h" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/littlemacs/" (22390 59023 0 0) "src/" "README.md" "include/" "build/" ".gitignore" ".gitattributes" ".git/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/nodepractice/practice/" (22363 7070 0 0) "webserver.js" "test2.txt" "test.txt.gz" "test.txt" "test.html" "streams.js" "soex.js" "proj/" "pipingstreams.js" "output.txt" "noncallbackexample.js" "learnnode/" "index.html" "helloworld.js" "exampleserver.js" "eventexample3.js" "eventexample2.js" "eventexample.js" "dynamicepage.js" "chainingstreams.js" "callbackexample.js" "buffersjson.js" "buffers.js" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/littlemacs/littlemacs/" (22369 57061 0 0) "littlemacs.vcxproj.filters" "littlemacs.vcxproj" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/py/" (22215 35116 0 0) "getter.py" "awful.py" "#getter.py#" "#exploer#" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/scripts-and-dots/scripts/" (22369 53081 0 0) "python/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/nodepractice/notes/" (22363 2723 0 0) "tutorialpoints.org" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/nodepractice/" (22360 40130 0 0) "practice/" "notes/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/Black Desert/" (22284 8471 0 0) "UserCache/" "ScreenShot/" "GameOption.txt" "Customization/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/cram/done/" (22356 51008 0 0) "html_notes.org" "css_notes.org" "Csharp_notes.tex" "Csharp_notes.org" "#Csharp_notes.org#" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/GrandExchangeWrapper/build/lib/gew/" (22225 16842 0 0) "__init__.py" "items.json" "ItemList.py" "exchange.py" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/GrandExchangeWrapper/build/lib/" (22225 8061 0 0) "gew/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/GrandExchangeWrapper/build/" (22225 8061 0 0) "lib/" "bdist.win-amd64/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/GrandExchangeWrapper/gew/" (22225 54956 0 0) "__pycache__/" "__init__.py" "test.py~" "items.json" "ItemList.py" "exchange.py~" "exchange.py" "ex3.py" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/GrandExchangeWrapper/" (22225 55029 0 0) "setup.py" "setup.cfg" "scripts/" "README.md" "MANIFEST.in" "LICENSE" "gew.egg-info/" "gew/" "examples/" "dist/" "build/" ".gitignore~" ".gitignore" ".git/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/chat/FileClientSever/" (22331 43933 0 0) "server.py" "examples/" "client.py" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/chat/Server/Chat Client/bin/Debug/" (22315 54483 0 0) "Servers/" "server.spec" "res/" "python/" "Microsoft.Scripting.xml" "Microsoft.Scripting.Metadata.xml" "Microsoft.Scripting.Metadata.dll" "Microsoft.Scripting.dll" "Microsoft.Scripting.AspNet.xml" "Microsoft.Scripting.AspNet.dll" "Microsoft.Dynamic.xml" "Microsoft.Dynamic.dll" "IronPython.xml" "IronPython.Wpf.xml" "IronPython.Wpf.dll" "IronPython.SQLite.xml" "IronPython.SQLite.dll" "IronPython.Modules.xml" "IronPython.Modules.dll" "IronPython.dll" "Chat Client.vshost.exe.manifest" "Chat Client.vshost.exe.config" "Chat Client.vshost.exe" "Chat Client.pdb" "Chat Client.exe.config" "Chat Client.exe" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/chat/Server/Chat Client/bin/" (22305 13052 0 0) "Release/" "Debug/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/chat/Server/Chat Client/" (22315 54483 0 0) "Tools/" "Server.csproj.user" "Server.csproj" "Server/" "Properties/" "Program.cs" "packages.config" "obj/" "CommandStructure/" "bin/" "App.config" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/chat/Server/" (22315 54483 0 0) "packages/" "Chat Client.v12.suo" "Chat Client.sln" "Chat Client/" "../" "./")
+
+ ("c:/Users/CalebsComp/Documents/chat/" (22315 54679 0 0) "Server/" "README.md" "powerpoint/" "old project/" "FileClientSever/" "Client_Gui/" "Client/" ".git/" "../" "./")
+
+ ("c:/Users/CalebsComp/Desktop/chat/" (22311 47879 0 0) "Server/" "README.md" "old project/" "Client_Gui/" ".git/" "../" "./")
+
+ ("c:/Users/CalebsComp/Desktop/PyInstaller-3.1.1/" (22313 4439 0 0) "tests/" "set_version.py" "setup.py" "setup.cfg" "README.rst" "pyinstaller.py" "PyInstaller.egg-info/" "pyinstaller-gui.py" "PyInstaller/" "PKG-INFO" "MANIFEST.in" "makespec.py" "grab_version.py" "doc/" "COPYING.txt" "bootloader/" "bindepend.py" "archive_viewer.py" "../" "./")
+
+ ("c:/Users/CalebsComp/AppData/Roaming/Awesomium/" (21242 34398 0 0) "../" "./")
+
+ ("c:/Users/" (21532 31125 0 0) "Public/" "desktop.ini" "Default User/" "Default/" "CalebsComp/" "blank_000/" "All Users/" "../" "./")
+
+ ("c:/Users/CalebsComp/Downloads/emacs/" (21921 53319 0 0) "var/" "share/" "libexec/" "bin/" "../" "./")
+
+ ("c:/Users/CalebsComp/Downloads/emacs/bin/" (22331 39621 0 0) "zlib1.dll" "runemacs.exe" "libXpm-noX4.dll" "libxml2-2.dll" "libwinpthread-1.dll" "libtiffxx-5.dll" "libtiff-5.dll" "libtasn1-6.dll" "librsvg-2-2.dll" "libpng16-16.dll" "libpixman-1-0.dll" "libpangowin32-1.0-0.dll" "libpangoft2-1.0-0.dll" "libpangocairo-1.0-0.dll" "libpango-1.0-0.dll" "libp11-kit-0.dll" "libnettle-6-1.dll" "liblzma-5.dll" "libjpeg-8.dll" "libjbig-0.dll" "libintl-8.dll" "libidn-11.dll" "libiconv-2.dll" "libhogweed-4-1.dll" "libharfbuzz-icu-0.dll" "libharfbuzz-gobject-0.dll" "libharfbuzz-0.dll" "libgomp-1.dll" "libgobject-2.0-0.dll" "libgnutlsxx-28.dll" "libgnutls-30.dll" "libgmp-10.dll" "libgmodule-2.0-0.dll" "libglib-2.0-0.dll" "libgio-2.0-0.dll" "libgif-7.dll" "libgdk_pixbuf-2.0-0.dll" "libgcc_s_seh-1.dll" "libfreetype-6.dll" "libfontconfig-1.dll" "libffi-6.dll" "libexpat-1.dll" "libcroco-0.6-3.dll" "libcairo-script-interpreter-2.dll" "libcairo-gobject-2.dll" "libcairo-2.dll" "libbz2-1.dll" "etags.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-25.0.50.exe" "ebrowse.exe" "ctags.exe" "addpm.exe" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
