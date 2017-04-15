@@ -13,15 +13,6 @@
                            ac-source-dictionary
                            ac-source-words-in-same-mode-buffers))
 
-; hack to fix ac-sources after pycomplete.el breaks it
-(add-hook 'python-mode-hook
-          '(lambda ()
-             (setq ac-sources '(ac-source-pycomplete
-                                ac-source-yasnippet
-                                ac-source-abbrev
-                                ac-source-dictionary
-                                ac-source-words-in-same-mode-buffers))))
-
 ;; from http://truongtx.me/2013/01/06/config-yasnippet-and-autocomplete-on-emacs/
 ; set the trigger key so that it can work together with yasnippet on
 ; tab key, if the word exists in yasnippet, pressing tab will cause
