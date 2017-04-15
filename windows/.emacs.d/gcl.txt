@@ -1,3 +1,0 @@
-(set-variable 'inferior-lisp-program
-  "C:/Progra~1/GCL-2.6.1/bin/gcl1.bat")
-(autoload 'fi:common-lisp "fi-site-init" "" t)

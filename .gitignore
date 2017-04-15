@@ -1,10 +1,14 @@
 linux/.emacs.d/emacs-backup/
 linux/.emacs.d/ac-comhist.dat
 linux/.emacs.d/auto-save-list
+linux/.python-environments/
+linux/.emacs.d/elpa
+
 windows/.emacs.d/emacs-backup/
 windows/.emacs.d/ac-comphist.dat
 windows/.emacs.d/auto-save-list
 windows/.emacs.d/.python-environments
-linux/.python-environments/
+windows/.emacs.d/elpa
+windows/.emacs.d/.emacs.d/elpa
 
 \#*#\
