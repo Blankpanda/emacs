@@ -1,14 +1,21 @@
-;; a lot of credit goes towards Casey Muratori for some of the functions in this file
+; a lot of credit goes towards Casey Muratori for some of the functions in this file
 (when (>= emacs-major-version 24)
  (require 'package)
   (add-to-list
    'package-archives
-   '("melpa" . "http://melpa.org/packages/")
+   '("melpa" . "https://melpa.org/packages/")
    t)
   (package-initialize))
-
 ;; settings folder
 (add-to-list 'load-path "~/.emacs.d/settings")
+
+;;commands folder
+ ;; (defun load-directory (dir)
+ ;;      (let ((load-it (lambda (f)
+ ;; 		       (load-file (concat (file-name-as-directory dir) f)))
+ ;; 		     ))
+ ;; 	(mapc load-it (directory-files dir nil "\\.el$"))))
+;;(load-directory "~/.emacs.d/commands/")
 
 ;; setup
 (setq initial-scratch-message "")
@@ -22,7 +29,7 @@
 (tool-bar-mode 0)
 (set-fringe-mode 0)
 
-;;split on startup
+;;split on startu+
 (split-window-horizontally)
 ; Smooth scroll
 (setq scroll-step 3)
@@ -56,7 +63,6 @@
 ;; size indication of file
 (size-indication-mode 1)
 
-
 (load-library "view")
 (require 'cc-mode)
 (require 'ido)
@@ -79,7 +85,6 @@
 (global-set-key (kbd "C-,") 'comment-region)
 (global-set-key (kbd "C-.") 'uncomment-region)
 
-<<<<<<< HEAD
  (defun copy-line (arg)
     "Copy lines (as many as prefix argument) in the kill ring.
       Ease of use features:
@@ -113,10 +118,8 @@ vi style of % jumping to matching brace."
 
 (global-set-key (kbd "C-%") 'copy-line)
 
-=======
 ;; stop back space from copying
 (global-set-key "\M-\d" 'backward-kill-word)
->>>>>>> fd66ccb46dbdc630cd9f159cd7876242b317d6f8
 
 ;; easier windows movement (<ALT> + ARROW KEYS)
 (when (fboundp 'windmove-default-keybindings)
@@ -130,10 +133,11 @@ vi style of % jumping to matching brace."
 (require 'auto-complete-settings)
 
 ;;theme
-(require 'moe-theme)
-(setq moe-theme-highlight-buffer-id nil)
-(moe-dark)
-(moe-theme-set-color 'cyan)
+ (require 'moe-theme)
+ (setq moe-theme-highlight-buffer-id nil)
+ (moe-dark)
+ (moe-theme-set-color 'cyan)
+
 ;;(load-theme 'monokai t)
 
 ;; text decoration
@@ -161,12 +165,8 @@ vi style of % jumping to matching brace."
  (modify-face 'font-lock-fixme-face "Red" nil nil t nil t nil nil)
  (modify-face 'font-lock-note-face "Dark Green" nil nil t nil t nil nil)
  
-
-
-<<<<<<< HEAD
-
 ;; languages
-=======
+
 ;; ---- languages ----
 
 ;; C/C++
@@ -213,7 +213,7 @@ vi style of % jumping to matching brace."
                                     (brace-list-intro      .  4)))
     (c-echo-syntactic-information-p . t))
     "petar's Big Fun C++ Style")
->>>>>>> fd66ccb46dbdc630cd9f159cd7876242b317d6f8
+
 
 
 ;; ----- functions -----
@@ -232,6 +232,12 @@ vi style of % jumping to matching brace."
   (insert "\n")
   (insert "#endif")
   )
+
+(defun write-selected-text (name)
+  "write mark to file in current buffers location."
+  (write-region (buffer-substring region-beginning region-end) nil (append default-directory name) 'append)
+)
+
 
 (defun replace-string (FromString ToString)
   "Replace a string with another string."
@@ -257,104 +263,96 @@ vi style of % jumping to matching brace."
 
 (global-set-key (kbd "M-n") 'next-blank-line)
 (global-set-key (kbd "M-p") 'previous-blank-line)
-<<<<<<< HEAD
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#272822" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
- '(compilation-message-face (quote default))
- '(cua-global-mark-cursor-color "#2aa198")
- '(cua-normal-cursor-color "#839496")
- '(cua-overwrite-cursor-color "#b58900")
- '(cua-read-only-cursor-color "#859900")
- '(custom-safe-themes
-   (quote
-    ("14aa6c39853d8bab802750a7451fd652f1000e44511cc8216fc95c008e6f71ad" "6c62b1cd715d26eb5aa53843ed9a54fc2b0d7c5e0f5118d4efafa13d7715c56e" "71ecffba18621354a1be303687f33b84788e13f40141580fa81e7840752d31bf" "bf3ec301ea82ab546efb39c2fdd4412d1188c7382ff3bbadd74a8ecae4121678" default)))
- '(fci-rule-color "#3E3D31")
- '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
- '(highlight-symbol-colors
-   (--map
-    (solarized-color-blend it "#002b36" 0.25)
-    (quote
-     ("#b58900" "#2aa198" "#dc322f" "#6c71c4" "#859900" "#cb4b16" "#268bd2"))))
- '(highlight-symbol-foreground-color "#93a1a1")
- '(highlight-tail-colors
-   (quote
-    (("#3E3D31" . 0)
-     ("#67930F" . 20)
-     ("#349B8D" . 30)
-     ("#21889B" . 50)
-     ("#968B26" . 60)
-     ("#A45E0A" . 70)
-     ("#A41F99" . 85)
-     ("#3E3D31" . 100))))
- '(hl-bg-colors
-   (quote
-    ("#7B6000" "#8B2C02" "#990A1B" "#93115C" "#3F4D91" "#00629D" "#00736F" "#546E00")))
- '(hl-fg-colors
-   (quote
-    ("#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36" "#002b36")))
- '(magit-diff-use-overlays nil)
- '(nrepl-message-colors
-   (quote
-    ("#dc322f" "#cb4b16" "#b58900" "#546E00" "#B4C342" "#00629D" "#2aa198" "#d33682" "#6c71c4")))
- '(pos-tip-background-color "#A6E22E")
- '(pos-tip-foreground-color "#272822")
- '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#073642" 0.2))
- '(term-default-bg-color "#002b36")
- '(term-default-fg-color "#839496")
- '(vc-annotate-background nil)
- '(vc-annotate-color-map
-   (quote
-    ((20 . "#F92672")
-     (40 . "#CF4F1F")
-     (60 . "#C26C0F")
-     (80 . "#E6DB74")
-     (100 . "#AB8C00")
-     (120 . "#A18F00")
-     (140 . "#989200")
-     (160 . "#8E9500")
-     (180 . "#A6E22E")
-     (200 . "#729A1E")
-     (220 . "#609C3C")
-     (240 . "#4E9D5B")
-     (260 . "#3C9F79")
-     (280 . "#A1EFE4")
-     (300 . "#299BA6")
-     (320 . "#2896B5")
-     (340 . "#2790C3")
-     (360 . "#66D9EF"))))
- '(vc-annotate-very-old-color nil)
- '(weechat-color-list
-   (unspecified "#272822" "#3E3D31" "#A20C41" "#F92672" "#67930F" "#A6E22E" "#968B26" "#E6DB74" "#21889B" "#66D9EF" "#A41F99" "#FD5FF0" "#349B8D" "#A1EFE4" "#F8F8F2" "#F8F8F0"))
- '(xterm-color-names
-   ["#073642" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"])
- '(xterm-color-names-bright
-   ["#002b36" "#cb4b16" "#586e75" "#657b83" "#839496" "#6c71c4" "#93a1a1" "#fdf6e3"]))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-=======
 
+(defun switch-bg ()
+  (interactive)
+  ;; use a property “state”. Value is t or nil
+  (if (get 'switch-bg 'state)
+      (progn
+	(moe-dark)
+	(put 'switch-bg 'state nil))
+    (progn
+      (moe-light)
+      (put 'switch-bg 'state t))))
 
+(defun my-display-buffer-below (buffer alist)
+"Doc-string."
+  (let (
+      (window
+        (cond
+          ((get-buffer-window buffer (selected-frame)))
+          ((window-in-direction 'below))
+          (t
+            (split-window (selected-window) nil 'below)))))
+    (window--display-buffer buffer window 'window alist display-buffer-mark-dedicated)
+    window))
 
+(defun my-display-buffer-above (buffer alist)
+"Doc-string."
+  (let (
+      (window
+        (cond
+          ((get-buffer-window buffer (selected-frame)))
+          ((window-in-direction 'above))
+          (t
+            (split-window (selected-window) nil 'above)))))
+    (window--display-buffer buffer window 'window alist display-buffer-mark-dedicated)
+    window))
 
+(defun my-display-buffer-left (buffer alist)
+"Doc-string."
+  (let (
+      (window
+        (cond
+          ((get-buffer-window buffer (selected-frame)))
+          ((window-in-direction 'left))
+          (t
+            (split-window (selected-window) nil 'left)))))
+    (window--display-buffer buffer window 'window alist display-buffer-mark-dedicated)
+    window))
 
+(defun my-display-buffer-right (buffer alist)
+"Doc-string."
+  (let (
+      (window
+        (cond
+          ((get-buffer-window buffer (selected-frame)))
+          ((window-in-direction 'right))
+          (t
+            (split-window (selected-window) nil 'right)))))
+    (window--display-buffer buffer window 'window alist display-buffer-mark-dedicated)
+    window))
 
+(defun dired-display-above ()
+"Doc-string."
+(interactive)
+  (let* (
+      (file-or-dir (dired-get-file-for-visit))
+      (buffer (find-file-noselect file-or-dir)))
+    (my-display-buffer-above buffer nil)))
 
+(defun dired-display-below ()
+"Doc-string."
+(interactive)
+  (let* (
+      (file-or-dir (dired-get-file-for-visit))
+      (buffer (find-file-noselect file-or-dir)))
+    (my-display-buffer-below buffer nil)))
 
+(defun dired-display-left ()
+"Doc-string."
+(interactive)
+  (let* (
+      (file-or-dir (dired-get-file-for-visit))
+      (buffer (find-file-noselect file-or-dir)))
+    (my-display-buffer-left buffer nil)))
 
+(defun dired-display-right ()
+"Doc-string."
+(interactive)
+  (let* (
+      (file-or-dir (dired-get-file-for-visit))
+      (buffer (find-file-noselect file-or-dir)))
+    (my-display-buffer-right buffer nil)))
 
-
-
-
-
-
-
->>>>>>> fd66ccb46dbdc630cd9f159cd7876242b317d6f8
+(define-key global-map [f8] 'replace-string)
