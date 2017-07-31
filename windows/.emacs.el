@@ -356,3 +356,13 @@ vi style of % jumping to matching brace."
     (my-display-buffer-right buffer nil)))
 
 (define-key global-map [f8] 'replace-string)
+
+(defun ts-comm ()
+  "Generate a comment"
+  (interactive)
+  (setq BaseFileName (file-name-sans-extension (file-name-nondirectory buffer-file-name)))
+  (insert "/*\n")
+  (insert (concat " * " (current-time-string) " Caleb Ellis\n"))
+  (insert "* TODO: write comment\n")
+  (insert "*/\n")
+  )
