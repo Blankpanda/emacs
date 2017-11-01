@@ -9,13 +9,6 @@
 ;; settings folder
 (add-to-list 'load-path "~/.emacs.d/settings")
 
-;;commands folder
- ;; (defun load-directory (dir)
- ;;      (let ((load-it (lambda (f)
- ;; 		       (load-file (concat (file-name-as-directory dir) f)))
- ;; 		     ))
- ;; 	(mapc load-it (directory-files dir nil "\\.el$"))))
-;;(load-directory "~/.emacs.d/commands/")
 
 ;; setup
 (setq initial-scratch-message "")
@@ -24,43 +17,28 @@
 (setq visible-bell t)
 (setq undo-limit 20000000)
 (setq undo-strong-limit 40000000)
+
 (scroll-bar-mode 0)
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 (set-fringe-mode 0)
 
-;;split on startu+
-(split-window-horizontally)
-; Smooth scroll
-(setq scroll-step 3)
-; Clock
-(display-time)
-;; scroll with mousewheel
-(mouse-wheel-mode 1)
-;; highlight line in use
-;(global-hl-line-mode 1)
-;; stop cursor blink
-(blink-cursor-mode 0)
-(set-cursor-color "red")
- ;; normal copy/cut/paste
-(cua-mode 1)
- ;; auto complete another parenthesis when one is typed
-(electric-pair-mode 1)
-;; text wrapping
-(global-visual-line-mode 1)
-;; i-beam cursor
-(modify-all-frames-parameters (list (cons 'cursor-type 'bar)))
-;; new files open up in a seperate window
-;; (setq pop-up-frames t)
-;; line numbers
-(global-linum-mode 0)
-;; make it so all emacs backusp go to a backups folder
-(setq backup-directory-alist '(("" . "~/.emacs.d/emacs-backup")))
-;; highlight parenthesis
-(require 'paren)
+(split-window-horizontally) ;; split on startup
+(setq scroll-step 3) ;;  Smooth scroll
+(display-time) ;; Clock
+(mouse-wheel-mode 1) ;; scroll with mousewheel
+;;(global-hl-line-mode 1) ;; highlight line in use
+(blink-cursor-mode 1) ;; stop cursor blink
+(cua-mode 1) ;; normal copy/cut/paste
+(electric-pair-mode 1) ;; auto complete another parenthesis when one is typed
+(global-visual-line-mode 1) ;; text wrapping
+(modify-all-frames-parameters (list (cons 'cursor-type 'bar))) ;; i-beam cursor
+;; (setq pop-up-frames t) ;; new files open up in a seperate window
+(global-linum-mode 0) ;; line numbers
+(setq backup-directory-alist '(("" . "~/.emacs.d/emacs-backup"))) ;; make it so all emacs backusp go to a backups folder
+(require 'paren) ;; highlight parenthesis
 (show-paren-mode t)
-(setq show-paren-style 'expression)
-;; size indication of file
+(setq show-paren-style 'expression) ;; size indication of file
 (size-indication-mode 1)
 
 (load-library "view")
@@ -70,56 +48,29 @@
 (ido-mode t)
 
 ;; ------ keybindings -------
-(global-set-key (kbd "TAB") 'tab-to-tab-stop)
 
-;;run the dired command [f1]
-(global-set-key [f1] 'dired)
-;; f4 to goto line
-(global-set-key [f4] 'goto-line)
-;; run compile on f5
-(global-set-key [f5] 'compile)
 
-;; shell command it M-1 instead of M-!
-(global-set-key (kbd "M-1") 'shell-command)
-;; comment/uncomment keys
-(global-set-key (kbd "C-,") 'comment-region)
+(global-set-key [f1] 'dired) ;;run the dired command [f1]
+(global-set-key [f4] 'goto-line) ;; f4 to goto line
+(global-set-key [f5] 'compile) ;; run compile on f5
+(global-set-key (kbd "M-1") 'shell-command) ;; shell command it M-1 instead of M-!
+(global-set-key (kbd "C-,") 'comment-region) ;; comment/uncomment keys
 (global-set-key (kbd "C-.") 'uncomment-region)
-
- (defun copy-line (arg)
-    "Copy lines (as many as prefix argument) in the kill ring.
-      Ease of use features:
-      - Move to start of next line.
-      - Appends the copy on sequential calls.
-      - Use newline as last char even on the last line of the buffer.
-      - If region is active, copy its lines."
-    (interactive "p")
-    (let ((beg (line-beginning-position))
-          (end (line-end-position arg)))
-      (when mark-active
-        (if (> (point) (mark))
-            (setq beg (save-excursion (goto-char (mark)) (line-beginning-position)))
-          (setq end (save-excursion (goto-char (mark)) (line-end-position)))))
-      (if (eq last-command 'copy-line)
-          (kill-append (buffer-substring beg end) (< end beg))
-        (kill-ring-save beg end)))
-    (kill-append "\n" nil)
-    (beginning-of-line (or (and arg (1+ arg)) 2))
-    (if (and arg (not (= 1 arg))) (message "%d lines copied" arg)))
-
+(global-set-key (kbd "M-n") 'next-blank-line)
+(global-set-key (kbd "M-p") 'previous-blank-line)
 (global-set-key "\C-c\C-k" 'copy-line)
-
-(defun goto-match-paren (arg)
-  "Go to the matching parenthesis if on parenthesis, otherwise insert %.
-vi style of % jumping to matching brace."
-  (interactive "p")
-  (cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
-        ((looking-at "\\s\)") (forward-char 1) (backward-list 1))
-        (t (self-insert-command (or arg 1)))))
-
 (global-set-key (kbd "C-%") 'copy-line)
+(global-set-key "\M-\d" 'backward-kill-word) ;; stop back space from copying
+(define-key global-map [f8] 'replace-string)
 
-;; stop back space from copying
-(global-set-key "\M-\d" 'backward-kill-word)
+;; yas
+(setq yas-prompt-functions
+        '(yas-dropdown-prompt
+          yas-ido-prompt
+          yas-x-prompt
+          yas-completing-prompt
+          yas-no-prompt))
+(yas-global-mode 1))
 
 ;; easier windows movement (<ALT> + ARROW KEYS)
 (when (fboundp 'windmove-default-keybindings)
@@ -136,9 +87,7 @@ vi style of % jumping to matching brace."
  (require 'moe-theme)
  (setq moe-theme-highlight-buffer-id nil)
  (moe-dark)
- (moe-theme-set-color 'cyan)
-
-;;(load-theme 'monokai t)
+ (moe-theme-set-color 'orange)
 
 ;; text decoration
 (require 'font-lock)
@@ -217,6 +166,7 @@ vi style of % jumping to matching brace."
 
 
 ;; ----- functions -----
+
 (defun make-header ()
   "Format the give file as a header file"
   (interactive)
@@ -260,9 +210,6 @@ vi style of % jumping to matching brace."
   (search-forward-regexp "^[ \t]*\n")
   (forward-line -1)
   )
-
-(global-set-key (kbd "M-n") 'next-blank-line)
-(global-set-key (kbd "M-p") 'previous-blank-line)
 
 (defun switch-bg ()
   (interactive)
@@ -355,7 +302,6 @@ vi style of % jumping to matching brace."
       (buffer (find-file-noselect file-or-dir)))
     (my-display-buffer-right buffer nil)))
 
-(define-key global-map [f8] 'replace-string)
 
 (defun ts-comm ()
   "Generate a comment"
@@ -366,3 +312,33 @@ vi style of % jumping to matching brace."
   (insert "* TODO: write comment\n")
   (insert "*/\n")
   )
+
+ (defun copy-line (arg)
+    "Copy lines (as many as prefix argument) in the kill ring.
+      Ease of use features:
+      - Move to start of next line.
+      - Appends the copy on sequential calls.
+      - Use newline as last char even on the last line of the buffer.
+      - If region is active, copy its lines."
+    (interactive "p")
+    (let ((beg (line-beginning-position))
+          (end (line-end-position arg)))
+      (when mark-active
+        (if (> (point) (mark))
+            (setq beg (save-excursion (goto-char (mark)) (line-beginning-position)))
+          (setq end (save-excursion (goto-char (mark)) (line-end-position)))))
+      (if (eq last-command 'copy-line)
+          (kill-append (buffer-substring beg end) (< end beg))
+        (kill-ring-save beg end)))
+    (kill-append "\n" nil)
+    (beginning-of-line (or (and arg (1+ arg)) 2))
+    (if (and arg (not (= 1 arg))) (message "%d lines copied" arg)))
+
+
+(defun goto-match-paren (arg)
+  "Go to the matching parenthesis if on parenthesis, otherwise insert %.
+vi style of % jumping to matching brace."
+  (interactive "p")
+  (cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
+        ((looking-at "\\s\)") (forward-char 1) (backward-list 1))
+        (t (self-insert-command (or arg 1)))))
