@@ -5,7 +5,7 @@ linux/.python-environments/
 linux/.emacs.d/elpa/
 linux/.emacs.d/.python-environments/
 linux/.emacs.d/semanticdb/
-/linux/.emacs.d/url/
+linux/.emacs.d/url/
 
 windows/.emacs.d/emacs-backup/
 windows/.emacs.d/ac-comphist.dat
