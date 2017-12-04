@@ -1,0 +1,44 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "AckerFunction.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("AckerFunction" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("spaces" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [269 292])
+                    ("numberOfInvocations" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [294 330])
+                    ("countOfInvocations" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [382 447])
+                    ("acker" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("m" variable (:type "int") (reparse-symbol formal_parameters) [467 472])
+                            ("n" variable (:type "int") (reparse-symbol formal_parameters) [474 479]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [450 912])
+                    ("printSpaces" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1041 1133]))                  
+                :type "class")
+                nil [239 1135]))          
+      :file "AckerFunction.java"
+      :pointmax 1136
+      :fsize 1137
+      :lastmodtime '(22692 14090 85314 11000)
+      :unmatched-syntax nil))
+  :file "!home!caleb!workspace!181-Lab3!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

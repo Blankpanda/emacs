@@ -1,0 +1,17 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables
+  (list
+    (semanticdb-table "events.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("connected" function nil nil [165 298]))          
+      :file "events.js"
+      :pointmax 593
+      :fsize 592
+      :lastmodtime '(22165 43090 491455 130000)
+      :unmatched-syntax '((VARIABLE 560 . 572) (PAREN_BLOCK 577 . 591) (VARIABLE 441 . 453) (PAREN_BLOCK 456 . 532) (VARIABLE 346 . 358) (PAREN_BLOCK 361 . 391) (VAR 57 . 60) (PAREN_BLOCK 99 . 101) (PAREN_BLOCK 21 . 31))))
+  :file "!home!caleb!Documents!Programming!node!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

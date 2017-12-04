@@ -1,0 +1,16 @@
+;; Object Programming/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Programming/"
+  :tables
+  (list
+    (semanticdb-table "QLL.java"
+      :major-mode 'jdee-mode
+      :tags nil
+      :file "QLL.java"
+      :pointmax 1393
+      :fsize 1392
+      :lastmodtime '(22794 29972 944053 829000)
+      :unmatched-syntax '((BRACE_BLOCK 52 . 1392) (GT 50 . 51) (IDENTIFIER 49 . 50) (LT 48 . 49) (BRACE_BLOCK 53 . 1393) (GT 51 . 52) (IDENTIFIER 50 . 51) (LT 49 . 50) (BRACE_BLOCK 52 . 1392) (GT 50 . 51) (IDENTIFIER 49 . 50) (LT 48 . 49))))
+  :file "!home!caleb!Documents!Programming!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

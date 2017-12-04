@@ -1,0 +1,129 @@
+;; Object network/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "network/"
+  :tables
+  (list
+    (semanticdb-table "socket.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("addrinfo" type
+               (:members 
+                  ( ("ai_flags" variable (:type "int") (reparse-symbol classsubparts) [21 34])
+                    ("ai_family" variable (:type "int") (reparse-symbol classsubparts) [70 84])
+                    ("ai_socktype" variable (:type "int") (reparse-symbol classsubparts) [119 135])
+                    ("ai_protocol" variable (:type "int") (reparse-symbol classsubparts) [165 181])
+                    ("ai_addrlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [201 219])
+                    ("ai_addr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [250 275])
+                    ("ai_canonname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [308 327])
+                    ("ai_next" variable
+                       (:pointer 1
+                        :type ("addrinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [360 385]))                  
+                :type "struct")
+                nil [1 414])
+            ("sockaddr" type
+               (:members 
+                  ( ("sa_family" variable (:type "unsigned short") (reparse-symbol classsubparts) [436 461])
+                    ("sa_data" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [490 507]))                  
+                :type "struct")
+                nil [416 545])
+            ("sockaddr_in" type
+               (:members 
+                  ( ("sin_family" variable (:type "short int") (reparse-symbol classsubparts) [587 608])
+                    ("sin_port" variable (:type "unsigned short int") (reparse-symbol classsubparts) [637 665])
+                    ("sin_addr" variable (:type ("in_addr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [683 707])
+                    ("sin_zero" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [730 756]))                  
+                :type "struct")
+                nil [564 791])
+            ("in_addr" type
+               (:members 
+                  ( ("s_addr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [812 828]))                  
+                :type "struct")
+                nil [793 852])
+            ("socaddir_in6" type
+               (:members 
+                  ( ("sin6_family" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [896 918])
+                    ("sin6_port" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [949 969])
+                    ("sin_flowinfo" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1007 1030])
+                    ("sin6_addr" variable (:type ("in6_addr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1058 1084])
+                    ("sin6_scope_id" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1102 1126]))                  
+                :type "struct")
+                nil [872 1141])
+            ("in6_addr" type
+               (:members 
+                  ( ("s6_addr" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1163 1189]))                  
+                :type "struct")
+                nil [1143 1208])
+            ("sockaddr_storage" type
+               (:members 
+                  ( ("ss_family" variable (:type ("sa_family_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1238 1260]))                  
+                :type "struct")
+                nil [1210 1281])
+            ("sa" variable (:type ("sockaddr_in" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [1283 1305])
+            ("sa" variable (:type ("sockaddr_in6" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [1314 1337]))          
+      :file "socket.h"
+      :pointmax 1347
+      :fsize 1346
+      :lastmodtime '(22556 40973 23847 268000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [78 96])
+            ("string.h" include (:system-flag t) nil [97 116])
+            ("sys/types.h" include (:system-flag t) nil [117 139])
+            ("sys/socket.h" include (:system-flag t) nil [140 163])
+            ("netdb.h" include (:system-flag t) nil [164 182])
+            ("arpa/inet.h" include (:system-flag t) nil [183 205])
+            ("netinet/in.h" include (:system-flag t) nil [206 229])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [240 249])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [250 263]))                  
+                :type "int")
+                nil [231 1407]))          
+      :file "test.c"
+      :pointmax 1408
+      :fsize 1407
+      :lastmodtime '(22556 41697 815832 394000)
+      :unmatched-syntax nil))
+  :file "!home!caleb!Documents!Programming!network!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,81 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "RunningTotal.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("java.io.BufferedReader" include nil nil [146 176])
+            ("java.io.File" include nil nil [177 197])
+            ("java.io.FileReader" include nil nil [198 224])
+            ("java.io.IOException" include nil nil [225 252])
+            ("java.util.Scanner" include nil nil [253 278])
+            ("RunningTotal" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("product" variable
+                       (:typemodifiers ("private")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [332 359])
+                    ("sum" variable
+                       (:typemodifiers ("private")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [397 420])
+                    ("totalNumbersEntered" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [454 490])
+                    ("getNumbersFromUser" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [645 1269])
+                    ("getAverage" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1323 1399])
+                    ("getProduct" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1449 1507])
+                    ("getSum" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1553 1603]))                  
+                :type "class")
+                nil [280 1607]))          
+      :file "RunningTotal.java"
+      :pointmax 1608
+      :fsize 1606
+      :lastmodtime '(22564 27294 140080 437000)
+      :unmatched-syntax nil)
+    (semanticdb-table "MainClass.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("java.io.BufferedReader" include nil nil [1 31])
+            ("java.io.File" include nil nil [32 52])
+            ("java.io.FileReader" include nil nil [53 79])
+            ("java.io.PrintWriter" include nil nil [80 107])
+            ("java.io.*" include nil nil [206 223])
+            ("MainClass" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [275 288]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [251 1023]))                  
+                :type "class")
+                nil [224 1026]))          
+      :file "MainClass.java"
+      :pointmax 1027
+      :fsize 1026
+      :lastmodtime '(22564 30144 419993 852000)
+      :unmatched-syntax nil))
+  :file "!home!caleb!workspace!lab7conversion!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,26 @@
+;; Object testing/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testing/"
+  :tables
+  (list
+    (semanticdb-table "iris.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("csv" code nil nil [8 11])
+            ("sklearn" include nil nil [12 36])
+            ("main" function nil nil [38 1043])
+            ("csv_to_list" function (:arguments 
+              ( ("csv_string" variable nil (reparse-symbol function_parameters) [1060 1070]))              ) nil [1044 1106])
+            ("get_features" function nil nil [1107 1136])
+            ("get_classifiers" function (:arguments 
+              ( ("data_set" variable nil (reparse-symbol function_parameters) [1157 1165])
+                ("col_num" variable nil (reparse-symbol function_parameters) [1168 1175]))              ) nil [1137 1267])
+            ("if" code nil nil [1351 1389]))          
+      :file "iris.py"
+      :pointmax 1389
+      :fsize 1388
+      :lastmodtime '(22501 5034 272868 841000)
+      :unmatched-syntax nil))
+  :file "!home!caleb!Documents!ML!projects!testing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

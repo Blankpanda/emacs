@@ -1,0 +1,114 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "MainClass.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("MainClass" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [58 71]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34 78]))                  
+                :type "class")
+                nil [1 81]))          
+      :file "MainClass.java"
+      :pointmax 82
+      :fsize 87
+      :lastmodtime '(22794 24560 337232 577000)
+      :unmatched-syntax '((NEW 25 . 28) (NEW 25 . 28)))
+    (semanticdb-table "Winner.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("Winner" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("team" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [139 159])
+                    ("year" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [161 178])
+                    ("Winner" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [182 391])
+                    ("Winner" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("team" variable (:type "String") (reparse-symbol formal_parameters) [409 420])
+                            ("year" variable (:type "int") (reparse-symbol formal_parameters) [422 430]))                          )
+                        (reparse-symbol class_member_declaration) [395 477])
+                    ("getTeam" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [481 524])
+                    ("getYear" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [526 566]))                  
+                :type "class")
+                nil [116 573]))          
+      :file "Winner.java"
+      :pointmax 574
+      :fsize 608
+      :lastmodtime '(22605 44739 251465 61000)
+      :unmatched-syntax nil)
+    (semanticdb-table "LoShuMagic.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("LoShuMagic" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("test" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("matrix" variable
+                               (:dereference 2
+                                :type "int")
+                                (reparse-symbol formal_parameters) [116 130]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [96 3251]))                  
+                :type "class")
+                nil [3 3253]))          
+      :file "LoShuMagic.java"
+      :pointmax 3254
+      :fsize 3253
+      :lastmodtime '(22606 33541 891999 597000)
+      :unmatched-syntax nil)
+    (semanticdb-table "LoShuClassTester.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("LoShuClassTester" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [60 73]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [36 622]))                  
+                :type "class")
+                nil [2 625]))          
+      :file "LoShuClassTester.java"
+      :pointmax 626
+      :fsize 625
+      :lastmodtime '(22605 44739 251465 61000)
+      :unmatched-syntax nil))
+  :file "!home!caleb!workspace!homework3!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

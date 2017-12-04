@@ -1,0 +1,16 @@
+;; Object network_programming/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "network_programming/"
+  :tables
+  (list
+    (semanticdb-table "udp.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "udp.py"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22172 7331 319163 404000)
+      :unmatched-syntax nil))
+  :file "!home!caleb!Documents!Programming!python!network_programming!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

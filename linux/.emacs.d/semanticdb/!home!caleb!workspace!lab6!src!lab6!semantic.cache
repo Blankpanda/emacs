@@ -1,0 +1,77 @@
+;; Object lab6/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lab6/"
+  :tables
+  (list
+    (semanticdb-table "Box.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("lab6" package nil nil [110 123])
+            ("Box" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("width" variable
+                       (:typemodifiers ("private")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [175 196])
+                    ("length" variable
+                       (:typemodifiers ("private")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [198 220])
+                    ("height" variable
+                       (:typemodifiers ("private")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [222 244])
+                    ("label" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [246 267])
+                    ("Box" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [295 427])
+                    ("Box" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("w" variable (:type "double") (reparse-symbol formal_parameters) [442 450])
+                            ("l" variable (:type "double") (reparse-symbol formal_parameters) [452 460])
+                            ("h" variable (:type "double") (reparse-symbol formal_parameters) [462 470])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [471 482]))                          )
+                        (reparse-symbol class_member_declaration) [431 630])
+                    ("Box" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cloneMe" variable (:type "Box") (reparse-symbol formal_parameters) [645 656]))                          )
+                        (reparse-symbol class_member_declaration) [634 962])
+                    ("getVolume" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1011 1090])
+                    ("getWidth" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1094 1139])
+                    ("getLength" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1142 1189])
+                    ("getHeight" function
+                       (:typemodifiers ("public")
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [1192 1239])
+                    ("getLabel" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1242 1287]))                  
+                :type "class")
+                nil [125 1292]))          
+      :file "Box.java"
+      :pointmax 1292
+      :fsize 1291
+      :lastmodtime '(22535 37129 192876 624000)
+      :unmatched-syntax nil))
+  :file "!home!caleb!workspace!lab6!src!lab6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

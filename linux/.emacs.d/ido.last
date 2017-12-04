@@ -1,0 +1,347 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/caleb/Debian-Packages/fontconfig-infinality/" . "debian/")
+ ("/home/caleb/Debian-Packages/" . "fontconfig-infinality/")
+ ("/home/caleb/Documents/School/courseworkCIS/CIS180/Lab3/" . "src/")
+ ("/home/caleb/Documents/School/courseworkCIS/CIS180/" . "Lab3/")
+ ("/home/caleb/Documents/School/courseworkCIS/CIS190/" . "hw1/")
+ ("/home/caleb/Documents/Programming/AI/" . "MiniMax/")
+ ("/home/caleb/Documents/School/CIS190/" . "week5/")
+ ("/home/caleb/Documents/Programming/network/" . "c/")
+ ("/home/caleb/Documents/School/CIS272/" . "week6/")
+ ("/home/caleb/.emacs.d/elpa/" . "moe-theme-20160322.115/")
+ ("/home/caleb/.emacs.d/" . "settings/")
+ ("/home/caleb/Documents/School/CIS181/" . "week4/")
+ ("/home/caleb/Documents/emacsconf/" . "linux/")
+ ("/home/caleb/Documents/School/courseworkCIS/181-Lab7/" . "src/")
+ ("/home/caleb/Documents/School/courseworkCIS/homework3/" . "bin/")
+ ("/home/caleb/Documents/School/Y1S1/" . "CIS180/")
+ ("/home/caleb/181-Lab5/" . "src/")
+ ("/home/caleb/Documents/School/courseworkCIS/181-Project1/" . "src/")
+ ("/home/caleb/Documents/School/courseworkCIS/181-Lab6/" . "src/")
+ ("/home/caleb/Documents/School/courseworkCIS/" . "CIS180/")
+ ("/home/caleb/Documents/Programming/nirn/references/" . "classSample/")
+ ("/home/caleb/Documents/Programming/nirn/" . "references/")
+ ("/home/caleb/workspace/lab7conversion/" . "src/")
+ ("/home/caleb/workspace/181-Lab1/" . "src/")
+ ("/home/caleb/workspace/homework3/" . "src/")
+ ("/home/caleb/workspace/lab10/" . "src/")
+ ("/home/caleb/workspace/lab9/src/" . "lab9/")
+ ("/home/caleb/workspace/lab9/" . "src/")
+ ("/home/caleb/Documents/School/CIS180/coursework/homework2/" . "src/")
+ ("/home/caleb/Documents/School/CIS180/coursework/" . "homework2/")
+ ("/home/caleb/workspace/lab6/src/" . "lab6/")
+ ("/home/caleb/workspace/lab6/" . "src/")
+ ("/home/caleb/workspace/homework2/" . "src/")
+ ("/home/caleb/workspace/lab7part2/" . "src/")
+ ("/home/caleb/workspace/lab7part1/" . "src/")
+ ("/home/caleb/workspace/Lab5/src/" . "Lab5/")
+ ("/home/caleb/workspace/Lab5/" . "src/")
+ ("/home/caleb/Documents/School/CIS180/java-coursework/" . "lecture/")
+ ("/home/caleb/Documents/School/CIS180/" . "coursework/")
+ ("/home/caleb/Documents/homeworksolver/venv-3.4/" . "bin/")
+ ("/home/caleb/Documents/homeworksolver/" . "TestingModule/")
+ ("/home/caleb/workspace/Lab4/" . "src/")
+ ("/home/caleb/workspace/Lab3/" . "src/")
+ ("/home/caleb/workspace/Homework1c/" . "src/")
+ ("/home/caleb/workspace/Homework1b/" . "src/")
+ ("/home/caleb/workspace/Homework1a/" . "src/")
+ ("/home/caleb/workspace/Lab2a/" . "src/")
+ ("/home/caleb/Documents/ScriptsAndDots/scripts/" . "shell/")
+ ("/home/caleb/Documents/ScriptsAndDots/" . "scripts/")
+ ("/home/caleb/Documents/Programming/node/" . "examples/")
+ ("/home/caleb/Documents/Programming/python/" . "network_programming/")
+ ("/home/caleb/workspace/Lab1/" . "src/")
+ ("/home/caleb/workspace/" . "homework2/")
+ ("/home/caleb/Documents/School/" . "CIS190/")
+ ("/home/caleb/Downloads/source/" . "source/")
+ ("/home/caleb/Downloads/" . "source/")
+ ("/home/caleb/Documents/notes/" . "FSI/")
+ ("/home/caleb/Documents/Programming/C/icalc/" . "src/")
+ ("/home/caleb/Documents/Programming/C/" . "icalc/")
+ ("/home/caleb/.themes/G-Talkie-Classic/" . "xfwm4/")
+ ("/home/caleb/.themes/" . "G-Talkie-Classic/")
+ ("/home/caleb/" . ".emacs.d/")
+ ("/home/caleb/Documents/books/" . "writing/")
+ ("/home/" . "caleb/")
+ ("/home/caleb/Documents/Programming/" . "Haskell/")
+ ("/home/caleb/Documents/ML/projects/" . "testing/")
+ ("/home/caleb/Documents/ML/" . "projects/")
+ ("/home/caleb/Documents/" . "Programming/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/caleb/.emacs.d/settings/"
+ "/home/caleb/.emacs.d/elpa/moe-theme-20160322.115/"
+ "/home/caleb/"
+ "/home/caleb/.emacs.d/languages/"
+ "/home/caleb/.emacs.d/"
+ "/home/caleb/Pictures/"
+ "/home/caleb/Documents/Programming/Haskell/"
+ "/home/caleb/Documents/School/CIS190/"
+ "/home/caleb/Documents/School/CIS272/"
+ "/home/caleb/Documents/School/CIS272/week6/"
+ "/home/caleb/Documents/Programming/C/"
+ "/home/caleb/Documents/School/courseworkCIS/CIS180/Lab3/src/"
+ "/home/caleb/Documents/Programming/network/"
+ "/home/caleb/Documents/Programming/network/c/"
+ "/home/caleb/Documents/Programming/cexercises/"
+ "/home/caleb/Documents/Programming/LCTHW/"
+ "/home/caleb/Documents/Programming/AI/MiniMax/"
+ "/home/caleb/Documents/School/CIS190/week5/"
+ "/home/caleb/Documents/School/courseworkCIS/CIS190/hw1/"
+ "/home/caleb/Documents/School/CIS190/week4/"
+ "/home/caleb/Documents/School/CIS190/week1/"
+ "/home/caleb/Documents/Programming/"
+ "/home/caleb/Documents/School/CIS272/week2/"
+ "/home/caleb/Documents/School/CIS272/week1/"
+ "/home/caleb/Documents/School/CIS181/"
+ "/home/caleb/Documents/japanese/"
+ "/home/caleb/Documents/Papers/"
+ "/home/caleb/Documents/School/Y1S1/CIS180/"
+ "/home/caleb/Documents/School/CIS181/week4/"
+ "/home/caleb/Documents/School/CIS181/week3/"
+ "/home/caleb/Documents/School/CIS181/week2/"
+ "/home/caleb/Documents/School/CIS181/week1/"
+ "/home/caleb/workspace/homework3/src/"
+ "/home/caleb/Documents/emacsconf/"
+ "/home/caleb/Documents/ScriptsAndDots/scripts/shell/"
+ "/home/caleb/Documents/ScriptsAndDots/scripts/"
+ "/home/caleb/Documents/ScriptsAndDots/scripts/haskell/"
+ "/home/caleb/Documents/School/courseworkCIS/181-Lab7/src/"
+ "/home/caleb/Documents/Programming/nirn/"
+ "/home/caleb/181-Lab5/src/"
+ "/home/caleb/Documents/School/courseworkCIS/181-Project1/src/"
+ "/home/caleb/Documents/Programming/nirn/references/classSample/"
+ "/home/caleb/Documents/Programming/lain/"
+ "/home/caleb/workspace/homework2/src/"
+ "/home/caleb/workspace/lab6/src/lab6/"
+ "/home/caleb/workspace/lab7part2/src/"
+ "/home/caleb/workspace/lab9/src/lab9/"
+ "/home/caleb/workspace/lab7conversion/src/"
+ "/home/caleb/workspace/181-Lab1/src/"
+ "/home/caleb/Documents/School/CIS180/coursework/homework2/src/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "rainbow-mode-settings.el"
+ "moe-dark-theme.el"
+ "auto-complete-settings.el"
+ "theme.el"
+ "enviornment.el"
+ ".emacs.el"
+ "elisp.el"
+ "editing.el"
+ "php.el"
+ "python.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/caleb/.emacs.d/elpa/" (23073 27021 363026 52000) "epc-20140609.2234/" "concurrent-20160109.2046/" "jedi-core-20151214.705/" "popup-20151222.1339/" "deferred-20160109.2046/" "evil-nerd-commenter-20160209.49/" "evil-nerd-commenter-readme.txt" "moe-theme-20160322.115/" "auto-complete-20160107.8/" "archives/" "../" "monokai-theme-readme.txt" "jedi-20151214.705/" "grandshell-theme-20150404.501/" "monokai-theme-20160324.112/" "yasnippet-20160226.1359/" "rainbow-mode-0.12.signed" "./" "python-environment-20150310.153/" "gnupg/" "moe-theme-readme.txt" "rainbow-mode-0.12/" "multiple-cursors-20170908.1452/" "web-mode-20171118.1132/" "ctable-20140304.1659/" "pkg-info-20150517.443/" "epl-20150517.433/" "ample-zen-theme-20150119.1354/" "jdee-20160207.28/" "cyberpunk-theme-20160121.1712/" "haskell-mode-20160819.1008/" "dash-20160223.1028/")
+
+ ("/home/caleb/.emacs.d/settings/" (23073 27086 339027 597000) "rainbow-mode-settings.el" "../" "auto-complete-settings.el" "keybindings.el" "./" "org.el" "editing.el" "enviornment.el" "theme.el")
+
+ ("/home/caleb/.emacs.d/" (23073 27088 95027 638000) "elpa/" "languages/" "kkcrc" "abbrev_defs" "../" "url/" "./" "semanticdb/" "ido.last" "auto-save-list/" "ac-comphist.dat" "snippets/" ".python-environments/" "settings/" "emacs-backup/")
+
+ ("/home/caleb/" (23073 26817 947021 218000) ".xmonad/" ".quodlibet/" ".continuum/" ".Xauthority-l" ".gtkrc-2.0" "190HW3p1.c" ".jline-bsh.Interpreter.history" "a.out" "hw5p2.c" "gtest.c" ".gnupg/" ".python_history" "../" ".emacs.d/" "projects.org" "rifle.gif" ".fonts/" ".wicd/" ".idlerc/" ".themes/" "#*compilation*#" ".m2/" "190Hw3p2.c" "Music/" "notes.org" ".texmf-var/" ".mplayer/" ".npm/" ".dbus/" "Downloads/" ".local/" "190HW4p2.c" ".bash_history" ".xsession-errors" "lab6p2" "./" "temp/" ".emacs_writing.el" ".bashrc" "helpers.c" ".lesshst" ".dmrc" "lab6p2.c" ".wine/" "Debian-Packages/" ".swp" "Documents/" "lab6p1.c" ".Xauthority-c" "lab9.c" ".spacemac.d.bak/" "tenativeschedule.xlsx" ".fehbg" ".pulse-cookie" ".thunderbird/" "Mail/" ".ICEauthority" ".tmacs.el" ".ghc/" "Public/" ".cache/" ".gem/" "Desktop/" ".ssh/" ".swn" ".gtk-bookmarks" ".emacs.el" ".gstreamer-0.10/" ".gitconfig" ".i3/" ".bash_logout" ".kde/" ".atom/" ".swo" ".emacs.el~" ".eclipse/" ".bash_profile" ".config/" ".thumbnails/" "helpers.h" ".profile" ".mozilla/" ".pki/" ".gksu.lock" "190HWp2.c" "hw5p2_runs.txt" ".xdvirc" ".Xauthority" ".java/" ".FBReader/" ".xscreensaver" ".pip/" ".gnome2_private/" ".profile.save" "anaconda3/" "test.c" "190HW4p3.c" "190HW4p3Runs.txt" ".gconf/" "gangster_shoot_machine_gun_hg_wht.gif" ".gnome2/" "*compilation*" ".spacemacs" "lab6p1" ".swt/" "Videos/" "Pictures/" "lab7.c" "workspace/" ".bash_aliases" ".test" ".aptitude/" "CalebEllisHw4/" ".gnome/" ".gimp-2.8/")
+
+ ("/home/caleb/.emacs.d/languages/" (23073 26798 431020 754000) "../" "./" "elisp.el" "php.el" "python.el" "cpp.el" "java.el")
+
+ ("/home/caleb/.emacs.d/semanticdb/" (23008 52095 323546 682000) "!home!caleb!workspace!CalebEllisLab7AllParts!lab7part1!semantic.cache" "!home!caleb!workspace!homework3!src!semantic.cache" "!home!caleb!workspace!lab7part2!src!semantic.cache" "!home!caleb!workspace!lab7part1!src!semantic.cache" "!home!caleb!Documents!Programming!python!network_programming!semantic.cache" "!home!caleb!Documents!Programming!network!semantic.cache" "!usr!include!x86_64-linux-gnu!sys!semantic.cache" "!home!caleb!Documents!Programming!C!semantic.cache" "!home!caleb!workspace!Homework1c!src!semantic.cache" "!home!caleb!workspace!Lab4!src!semantic.cache" "../" "!usr!include!x86_64-linux-gnu!c++!4.9!bits!semantic.cache" "!home!caleb!Documents!Programming!Java!rand!semantic.cache" "!home!caleb!workspace!homework2!src!semantic.cache" "!home!caleb!Documents!Programming!semantic.cache" "!home!caleb!Documents!School!courseworkCIS!181-Lab7!src!semantic.cache" "!home!caleb!workspace!lab6!src!lab6!semantic.cache" "!home!caleb!workspace!181-Lab3!src!semantic.cache" "!home!caleb!Documents!Programming!cexercises!semantic.cache" "!home!caleb!Documents!ML!projects!testing!semantic.cache" "!home!caleb!workspace!Homework1a!src!semantic.cache" "./" "!home!caleb!workspace!Lab1!src!semantic.cache" "!home!caleb!Documents!School!courseworkCIS!CIS180!Lab3!src!semantic.cache" "!home!caleb!workspace!lab7conversion!src!semantic.cache" "!home!caleb!Documents!ScriptsAndDots!scripts!python!semantic.cache" "!home!caleb!Documents!Programming!node!examples!semantic.cache" "!home!caleb!Documents!Programming!LCTHW!semantic.cache" "!home!caleb!workspace!181-Lab1!src!semantic.cache" "!usr!include!semantic.cache" "!home!caleb!Documents!School!CIS181!semantic.cache" "!home!caleb!Documents!Programming!AI!MiniMax!semantic.cache" "!home!caleb!semantic.cache" "!home!caleb!workspace!Lab5!src!Lab5!semantic.cache" "!home!caleb!workspace!Lab2a!src!semantic.cache" "!home!caleb!Documents!School!CIS180!coursework!homework2!src!semantic.cache" "!home!caleb!Documents!School!courseworkCIS!181-Project1!src!semantic.cache" "!home!caleb!workspace!lab10!src!semantic.cache" "!home!caleb!workspace!Lab3!src!semantic.cache" "!home!caleb!workspace!Homework1b!src!semantic.cache" "!home!caleb!Documents!School!semantic.cache" "!home!caleb!workspace!Lab2b!src!semantic.cache" "!home!caleb!181-Lab5!src!semantic.cache" "!home!caleb!workspace!lab9!src!lab9!semantic.cache" "!home!caleb!Documents!Programming!Java!semantic.cache")
+
+ ("/home/caleb/.emacs.d/elpa/moe-theme-20160322.115/" (23040 40835 612005 446000) "moe-theme.el" "moe-theme-autoloads.el" "moe-light-theme.el" "../" "moe-theme.elc" "moe-theme-pkg.el" "./" "moe-theme-switcher.elc" "moe-dark-theme.el" "moe-theme-switcher.el")
+
+ ("/home/caleb/Documents/School/CIS272/week2/" (23014 27554 468002 126000) "day4.org" "day3.org" "../" "./" "day5.org")
+
+ ("/home/caleb/Documents/Programming/network/" (23008 51893 531547 663000) "../" "./" "socket.h" "test.c" "socket_notes.org" "c/")
+
+ ("/home/caleb/Documents/School/CIS272/week6/" (23027 5719 448631 806000) "../" "#day14.org#" "day14.org" "#day12.org#" "./" "day13.org" "day12.org" ".#day14.org")
+
+ ("/home/caleb/Documents/School/CIS272/" (23027 5841 904634 716000) "week6/" "day21.org" "week4/" "day16.org" "day22.org" "week5/" "../" "week2/" "#day22.org#" "day20.org" "week3/" "./" ".#day22.org" "week1/")
+
+ ("/home/caleb/Documents/School/CIS190/" (23034 18245 655999 656000) "week6/" ".#day7.org" "day19.org" "week4/" "week5/" "../" "week2/" "week7/" "day20.org" "week3/" "./" "day24.org" "week1/" "day18.org")
+
+ ("/home/caleb/Pictures/" (22962 30902 383009 937000) "KVATKbz.jpg" "2016-07-09-191433_1366x768_scrot.png" "1472736196830.jpg" "goodDesign.png" "1478086315517.webm" "38.jpg" "1483473447654.jpg" "1464855219581.jpg" "1483808054439.png" "1464953099471.jpg" "1463255451445.webm" "39.jpg" "../" "1483382869260.webm" "36.jpg" "1492200243993.webm" "951.jpg" "1465576588555.webm" "1472655420617.jpg" "1502060002020.jpg" "1457972848020.png" "1461488977232.jpg" "87T4duV.jpg" "1498267376891.webm" "1461005795786.gif" "1483425161933.jpg" "1483459737279.jpg" "1472732762908.jpg" "./" "2016-09-18-115842_1366x768_scrot.png" "YAAaKL2.webm" "wallpapers/" "main.jpg" "ngngxz.webm" "1492199997333.webm" "1498009169835.gif" "1472314339278.png" "1472655357179.jpg" "1460299636450.webm" "1465658945198.png" "1472655172097.png" "5JdhJDH.png" "1483509198320.jpg" "35.jpg" "1496863704320.jpg" "1483424892603.jpg" "d45ea3697603cc9ade3821623783596c.jpeg" "2016-07-10-230941_1366x768_scrot.png" "40.jpg" "badDesign.png" "2016-07-09-191417_1366x768_scrot.png" "1495657745732.webm" "anime/" "1495660662250.webm" "1498004617747.jpg" "1483382470814.webm" "WttNifQ.png" "1483473149553.jpg" "1465589065755.webm" "1483525466664.jpg" "2016-09-18-123518_1366x768_scrot.png" "1492201122893.webm" "37.jpg" "41.jpg" "hn1FQoe.jpg")
+
+ ("/home/caleb/Debian-Packages/fontconfig-infinality/debian/" (22770 34094 414901 337000) "Kantai Collection 47.png" "r-pq7t9xzh.jpg" "86.jpg" "7.jpg" "1453420743284.jpg" "88c6a460b1da37bf19dea366123bd63a.jpeg" "1464913079987.png" "88cabce02e86e408a8f051b3c2e1b963.gif" "1463134730820.webm" "106.jpg" "sample_f06fcac4783f98d42392e1c93fedd786.jpg" "1454564311826.jpg" "compat" "Re Zero kara Hajimeru Isekai Seikatsu 11.jpg" "PBG/" "1463135887692.webm" "1462066656209.jpg" "eqt/" "64.jpg" "3d5034e8106f98c5a63e5d2f05b5177f.jpg" "../" "Re Zero kara Hajimeru Isekai Seikatsu 6.jpg" "1843683 - Noill Penny Stardew_Valley animated.gif" "68a0b067bb491ca9054dfcf2d6e9a36a.jpg" "292aa6f19e49dd0d84688b9b5d033068.jpg" "99.jpg" "1455245394746.jpg" "sample_09ddddbe2b4326cb08aa408c3d351e95.jpg" "1842745 - Noill Penny Stardew_Valley.png" "108.jpg" "sample_8f97d94dc62543a020f64cd5c2b4dd01.jpg" "1452515016806.jpg" "1843681 - Penny Stardew_Valley Tabi-Butt.png" "11.jpg" "79.jpg" "1463134864517.webm" "1457894945636.png" "source/" "1463600146696.gif" "Panchan/" "game/" "105.jpg" "9d28ca583c5fb0ecf207d1357cc9cbae.png" "e95207fa8b3c187d9ef71fcf9ccd4c85.jpeg" "1457895023959.png" "54652001_p0.png" "0150a0b761638e4d744473dffff290f3.png" "./" "14.jpg" "85.jpg" "b13a7824044719e3731ce6a902f9730d.png" "104.jpg" "1462653982069.jpg" "Zk3gLwr.jpg" "7526e941447a674a587ff4a319e858b6.jpeg" "control" "1492299352954.webm" "copyright" "Azusa+nakano+_76ec91d63204ded37d00c7c16111b772.jpg" "5026328660678b5918abf418bdf2a60e.png" "1780709 - Mei Overwatch Rozencruz tracer.jpg" "1465619668278.webm" "sample_56cbdba28e940e67e7fb92f819fe7a51.jpg" "1ddd0e152604c04f0678173240ee5ee0.jpg" "84.jpg" "Flandre.jpg" "sample_d8f2cb9f6fcd9db398aa7a412ee76b4f.jpg" "1462554142982.jpg" "87.jpg" "huni/" "83.jpg" "IT9eRl2.jpg" "42.jpg" "sample_7b47fb81f920278b4d6de19d63463120.jpg" "62.jpg" "10.jpg" "hanayo/" "1462032160501.webm" "1454564244369.jpg" "62c6b2c14dd27213922675a729280209.jpg" "changelog" "(Bokura no Love Live! 3) [Ringoya (Alp)] Gohan no Ojikan (Love Live!) [Chinese] [沒有漢化]/" "12.jpg" "SDT/" "sample_24247b6afc7c91c27751d2dbc7ae8cc7.jpg" "81.jpg" "8.jpg" "102.jpg" "rules" "f9b5d8054c936764f641f5a1b2fd0a6b.png" ".comments/" "107.jpg" "d947240d6c6ab34fcbd66d83d9162a24.jpeg" "links" "be10273a7839384a7336cc9689cdcd1a.jpg" "(C89) [39xream (Mikuta)] Hanayo no Omocha (Love Live!)/" "9.jpg" "b92e2194659b51f4c6d127bb7f5a25e1.png" "ColorfulUnfoldedChafer.webm" "7bc72b570cc3c5a59715cc42cc8ac01e.png" "GP[T/" "1465653111952.jpg" "docs" "sample_2fa0e5f5a6fe0775e48c02e6c5918768.jpg" "sample_1f19f4c6d12837bf2b8a6a3da9577312.jpg" "d2537ec6d9f06681c8dffa5658e69a12.jpg" "sort-someunport/")
+
+ ("/home/caleb/Debian-Packages/fontconfig-infinality/" (22366 11436 291227 297000) "fontconfig-infinality_1-2_amd64.build" "../" "build.sh" "fontconfig-infinality_1-2_all.deb" "fontconfig-infinality-1/" "./" "fontconfig-infinality_1-2_amd64.changes" "fontconfig-infinality-1-20130104_1.tar.bz2" "debian/")
+
+ ("/home/caleb/Debian-Packages/" (22865 45761 219282 465000) "freetype-infinality/" "fontconfig-infinality/" "../" "[CBM]_Sankarea_[720p].sfv" "./" ".git/" "README")
+
+ ("/home/caleb/Documents/Programming/Haskell/" (23026 1998 964532 223000) "bell.o" "backup.hs" "../" "bell.hs" "backup.hi" "./" "backup" "test.txt" "backup.o" "bell.hi")
+
+ ("/home/caleb/Documents/Programming/" (23026 2186 120536 671000) "Node.class" "LCTHW/" "C/" "ch.c" "../" "node/" "./" "python/" "Node.java" "Haskell/" "QLL.java" "ttest.c" "atest.c" "mtest.c" "lain/" "Java/" "QLL.class" "github-score/" "network/" "binary.c" "MainClass.java" "btest.c" "test.c" "MainClass.class" "cexercises/" "AI/" "nirn/")
+
+ ("/home/caleb/Documents/School/courseworkCIS/CIS180/Lab3/src/" (22675 25826 456724 378000) "BMICalculator.java" "BMICalculator.class" "../" "./")
+
+ ("/home/caleb/Documents/School/courseworkCIS/CIS180/Lab3/" (22675 25826 456724 378000) ".project" ".settings/" "../" "src/" ".classpath" "bin/" "./")
+
+ ("/home/caleb/Documents/School/courseworkCIS/CIS180/" (22675 25888 12722 392000) "lab6/" "../" "Lab2b/" "lab7part1/" "Lab3/" "./" "homework3/" "lecture/" "Lab5/" "Homework1/" "lab9/" "lab7part2/" "lab7part3/" "homework2/" "Lab2a/" "lab10/" "Lab1/" "Lab4/")
+
+ ("/home/caleb/Documents/School/courseworkCIS/CIS190/" (22995 47306 84603 873000) "CalebEllis190Hw1/" "../" "hw1/" "lab2/" "./" "CalebEllis190Hw1.tar")
+
+ ("/home/caleb/Documents/Programming/cexercises/" (22770 31093 59009 949000) "1.9exercise.c" "../" "1-8exercise.c" "./" "1-10exercise.c")
+
+ ("/home/caleb/Documents/School/courseworkCIS/CIS190/hw1/" (22995 47279 888604 0) "Part2/" "a.out" "../" "Part1Step2/" "./" "Part1Step1/" "Part1Step3/")
+
+ ("/home/caleb/Documents/School/CIS190/week5/" (23006 9005 716509 806000) "../" "day11.org" "./" "day9.org" "day10.org")
+
+ ("/home/caleb/Documents/School/CIS272/week5/" (22994 7703 510922 710000) "../" "./" "day9.org" "day10.org")
+
+ ("/home/caleb/Documents/homeworksolver/TestingModule/" (22994 20230 920910 50000) "hellomodule.c" "hello.c" "../" "./" "setup.py")
+
+ ("/home/caleb/Documents/School/courseworkCIS/" (22977 5633 880520 844000) "../" "README.md" "CIS181/" "./" "project.org" "CIS180/" "CIS190/" ".git/")
+
+ ("/home/caleb/Documents/School/CIS190/week1/" (22985 4426 388025 813000) "../" "day2a.org" "day1.org" "./")
+
+ ("/home/caleb/Documents/School/CIS190/week4/" (22985 5310 952046 836000) "../" "day6.org" "./" "day8.org" "day7.org" "#day8.org#")
+
+ ("/home/caleb/Documents/Programming/AI/MiniMax/" (22431 46821 149265 681000) "../" "notes.org" "./" "tictac.png" "tic.py")
+
+ ("/home/caleb/Documents/Programming/AI/" (22431 44158 877202 409000) "../" "MiniMax/" "./")
+
+ ("/home/caleb/Documents/Programming/network/c/" (22198 48126 562545 553000) "../" "notes.c" "net.c" "./")
+
+ ("/home/caleb/.xmonad/" (22978 19390 643301 802000) "xmonad.o" "../" "xmonad.errors" "xmonad.hi" "xmonad-x86_64-linux" "./" "#xmonad.hs#" "xmonad.hs" "xmonad.hs.save" "xmonad.hxs")
+
+ ("/home/caleb/Documents/School/CIS272/week3/" (22975 43015 784006 555000) "../" "day6.org" "./")
+
+ ("/home/caleb/Documents/School/CIS272/week1/" (22975 42907 624003 984000) "../" "day1.org" "./" "day2.org")
+
+ ("/home/caleb/workspace/Lab2a/src/" (22499 46988 769228 625000) "Payroll.class" "../" "./" "Payroll.java")
+
+ ("/home/" (22142 61286 491918 697000) "../" "./" "caleb/")
+
+ ("/home/caleb/Documents/Programming/LCTHW/" (22214 16234 624069 275000) "ex3.c" "../" "ex1.c" "#ex3.c#" "ex2.c" "./" "valgrind-3.11.0/" "Makefile")
+
+ ("/home/caleb/Documents/Programming/node/" (22165 42441 659439 710000) "../" "./" "examples/")
+
+ ("/home/caleb/Documents/japanese/" (22971 46006 337339 320000) "../" "EnglishGrammarReview.org" "Intro.org_archive" "./" ".#Phrases.org" "#Phrases.org#" "Phrases.org" "Intro.org" "Grammar.org" "hiragana-1-5.pdf" "TODO.org")
+
+ ("/home/caleb/Documents/Papers/" (22675 26300 904709 67000) "Self_and_M_other_Apocalypse_as_Return_to.pdf" "The_Moe-fication_of_Japanese_Otaku_Subcu.doc" "../" "cjfs-21-2-Steinberg_tatami-galaxy.pdf" "./" "Advising Agreement Form 1.2.pdf" "The_Crisis_of_the_Self_in_Neon_Genesis_E.pdf" "Advising Agreement Form 1.2 (1).pdf" "thomaslamarre-2009-theanimemachine.pdf" "Rethinking_animation_through_linguistics.pdf")
+
+ ("/home/caleb/Documents/School/CIS181/week4/" (22966 30322 88917 916000) "../" "w4_day2(testreview).org" "./" "#w4_day2(testreview).org#")
+
+ ("/home/caleb/Documents/School/CIS181/" (22966 30322 88917 916000) "w10_day1.org" "week4/" "w10_day3.org" "#w7_day3.org#" "../" "week2/" "#w7_day1.org#" "w7_day3.org" "w7_day2.org" "w11_day2.org" "w6_day1.org" "week3/" "./" "#w6_day2.org#" "w11_day3.org" "w12_day1.org" "w6_day2.org" "w7_day1.org_archive" "w9_day3.org" "#w8_day3.org#" "ArrayHandler.java" "week1/" "w8_day3.org" "w7_day1.org" "labs/" "CalebEllisHw2.docx" "#test.html#" "w8_day1.org" "test.html" "w9_day2.org" "w8_day2.org" "#w7_day2.org#" "w12_day2.org")
+
+ ("/home/caleb/Documents/School/Y1S1/CIS180/" (22966 28050 532863 929000) "week6/" "w12_day3.org" "w10_day1.org" "week4/" "week5/" "../" ".#w6_day3.org" "week7/" "cat" ".#w7_day1.org" "w9_day1.org" "./" "w8_day1.html" "w12_day1.org" "w10_day2.org" "#w8_day2.org#" "beforew4/" "finalexam_review.org" "w8_day3.org" "w8_day1.org")
+
+ ("/home/caleb/Documents/School/" (22962 31105 275014 759000) "FinalDraft-A1ENL102-CalebEllisRevisionLog.docx" "../" "courseworkCIS/" "CIS181/" "./" "FinalDraft-A1ENL102-CalebEllisRevision.docx" "agenda.org" "CIS272/" "FinalDraft-A1ENL102-CalebEllisRevisonLog.odt" "Y1S1/" "schedulefall2017.xlsx" "CIS190/" "181-Lab8-CalebEllis.zip")
+
+ ("/home/caleb/Documents/ScriptsAndDots/scripts/shell/" (22873 30569 388088 673000) "backup.sh" "../" "./" "loginbake.sh" "create_script.sh")
+
+ ("/home/caleb/Documents/School/CIS181/week3/" (22794 29798 136049 675000) "w3_day2.org" "../" "w3_day1.org" "./" "w3_day3.org")
+
+ ("/home/caleb/Documents/" (22828 38968 627842 775000) "notes/" "../" "reddit-downloader/" "goat/" "ML/" "School/" "books/" "school_old/" "Langs/" "./" "homeworksolver/" "test.txt" "japanese/" "ScriptsAndDots/" "Papers/" "emacsconf/" "Programming/" "session-transfer/")
+
+ ("/home/caleb/Documents/School/CIS181/week2/" (22688 19488 635999 968000) "w2_day2.org" "../" "./" "#w2_day1.org#" "w2_day3.org")
+
+ ("/home/caleb/Documents/School/CIS181/week1/" (22717 17096 200189 157000) "../" "w1_day2.org" "./" "w1_day3.org" "w1_day1.org")
+
+ ("/home/caleb/workspace/homework3/src/" (22794 24560 341232 577000) "../" "#LoShuMagic.java#" "./" "LoShuMagic.java" "MainClass.java" "LoShuClassTester.java" "Winner.java")
+
+ ("/home/caleb/Documents/emacsconf/" (22769 26760 90725 381000) "../" "windows/" "linux/" "./" ".gitignore" ".git/")
+
+ ("/home/caleb/Documents/emacsconf/linux/" (22336 58458 731516 755000) "../" ".emacs.d/" "./" ".emacs.el")
+
+ ("/home/caleb/Documents/ScriptsAndDots/scripts/" (22769 24181 526737 910000) "../" "./" "python/" "shell/" "haskell/")
+
+ ("/home/caleb/Documents/ScriptsAndDots/scripts/python/" (22769 21482 422751 24000) "dlimgur.py" "imagenum.py" "mal-info.py" "timesub.py" "../" "line.py" "decant.py" "./" "vidc.py" "dir-make.py" "filenum.py")
+
+ ("/home/caleb/Documents/ScriptsAndDots/scripts/haskell/" (22769 22252 762747 281000) "bakmaker.hs" "backup.hs" "../" "./")
+
+ ("/home/caleb/Documents/ScriptsAndDots/" (22769 21597 782750 464000) "../" "README.md" "linux/" "./" ".gitignore" "atom/" ".git/" "scripts/")
+
+ ("/home/caleb/Documents/Programming/Java/" (22336 58605 915520 253000) "##Hello.java##" "../" "./" "rand/" "Hello.java")
+
+ ("/home/caleb/Documents/School/courseworkCIS/181-Lab7/src/" (22763 25253 576403 122000) "SortedList.java" "../" "SortedListTester.java" "SortedListInterface.java" "./" "ListException.java" "#SortedList.java#")
+
+ ("/home/caleb/workspace/" (22758 12767 792685 418000) "lab6/" "Random/" "../" "Homework1c/" ".metadata/" "Lab2b/" "Homework1a/" "lab7part1/" "lab7conversion/" "181-Lab2/" "181-Lab6/" "Lab3/" "./" "homework3/" "Homework1b/" "Lab5/" "181-Lab1/" "lab3part3/" "181-Lab7/" "CalebEllisLab7AllParts/" "FirstRealClassDiagram/" "181-Lab5/" "PrintStuff/" "181-Lab8/" "lab5conversion/" "lab9/" "lab7part2/" "homework2/" "181-Lab3/" "181-Lab4/" "Lab2a/" "lab10/" "Lab1/" "Lab4/")
+
+ ("/home/caleb/Documents/School/courseworkCIS/181-Lab7/" (22757 19422 752330 876000) ".project" ".settings/" "../" "src/" ".classpath" "bin/" "./")
+
+ ("/home/caleb/Documents/School/courseworkCIS/homework3/bin/" (22692 13592 337302 181000) "../" "./" "LoShuClassTester.class" "LoShuMagic.class")
+
+ ("/home/caleb/Documents/School/courseworkCIS/homework3/" (22692 13592 337302 181000) "../" "bin/" "./")
+
+ ("/home/caleb/Documents/School/Y1S1/" (22675 25710 568728 118000) "../" "EGR111/" "./" "CIS180/" "ENL101/" "MTH153/")
+
+ ("/home/caleb/Documents/Programming/nirn/" (22750 32787 7989 262000) "../" "references/" "README.md" "src/" "build/" "devsetup.sh" "./" ".gitignore" "Makefile" ".git/")
+
+ ("/home/caleb/Documents/School/courseworkCIS/181-Project1/src/" (22739 48451 364024 36000) "../" "KthSmallest.class" "KSmallTester.class" "./" "KthSmallest.java" "KSmallTester.java")
+
+ ("/home/caleb/181-Lab5/src/" (22721 19148 19640 799000) "../" "notes.org" "./" "MyThread.java" "notes.txt" "Main.java" ".#notes.org")
+
+ ("/home/caleb/181-Lab5/" (22721 19202 931639 672000) ".project" ".settings/" "../" "src/" ".classpath" "bin/" "./")
+
+ ("/home/caleb/Documents/School/courseworkCIS/181-Project1/" (22739 46307 485392 262000) ".project" ".settings/" "../" "src/" ".classpath" "bin/" "./")
+
+ ("/home/caleb/Documents/School/courseworkCIS/181-Lab6/src/" (22739 46307 481392 262000) "GUIListener.java" "SmallInt.java" "Age.java" "../" "./" "GUI.java" "Process.java" "Calculator.java" "Main.java")
+
+ ("/home/caleb/Documents/School/courseworkCIS/181-Lab6/" (22739 46307 481392 262000) ".project" ".settings/" "../" "src/" ".classpath" "bin/" "./")
+
+ ("/home/caleb/Documents/Programming/nirn/references/classSample/" (22713 40964 713141 368000) "Box.cpp" "main.cpp" "../" "./" "Box.h")
+
+ ("/home/caleb/Documents/Programming/nirn/references/" (22713 40946 565140 653000) "../" "classSample/" "./" "base/")
+
+ ("/home/caleb/Documents/notes/" (22713 37414 957001 400000) "../" "FSI/" "./" "shub.org" "cyberpunk.txt" "printing.org")
+
+ ("/home/caleb/Documents/Programming/lain/" (22701 30143 368968 81000) "discord.js" "commands/" "../" "./" ".git/" "init.js" "lain-bot.js")
+
+ ("/home/caleb/Documents/Langs/" (22667 11287 152859 0) "../" "lexer.js" "./" "InputStream.js")
+
+ ("/home/caleb/workspace/181-Lab1/src/" (22675 3338 204000 718000) "../" "./" "SentenceTransformer.java" "#WordTransformer.java#" "MainExecutable.java" "WordTransformer.java")
+
+ ("/home/caleb/workspace/lab7conversion/src/" (22675 5291 668047 145000) "RunningTotal.java" "../" "./" "MainClass.java" "#RunningTotal.java#")
+
+ ("/home/caleb/workspace/homework2/src/" (22675 8674 108001 832000) "Item.java" "InventoryTrackerInterface.java" "Test.txt" "Inventory.java" "../" "Item.class" "./" "InventoryTrackerInterface.class" "Inventory.class")
+
+ ("/home/caleb/workspace/lab7conversion/" (22564 30575 155991 759000) ".project" ".settings/" "input.txt" "../" "output.txt" "src/" ".classpath" "bin/" "./")
+
+ ("/home/caleb/workspace/181-Lab1/" (22671 8211 4010 54000) ".project" ".settings/" "../" "src/" ".classpath" "bin/" "./")
+
+ ("/home/caleb/Documents/School/CIS180/coursework/" (22605 17402 179597 885000) "lab6/" "../" "Lab2b/" "lab7part1/" "Lab3/" "./" "homework3/" "lecture/" "Lab5/" "Homework1/" "lab9/" "lab7part2/" "lab7part3/" "homework2/" "Lab2a/" ".git/" "lab10/" "Lab1/" "Lab4/")
+
+ ("/home/caleb/Documents/School/CIS180/" (22606 45402 775999 909000) "week6/" "w12_day3.org" "w10_day1.org" "week4/" "week5/" "../" ".#w6_day3.org" "lab9CalebEllis.zip" "week7/" "cat" ".#w7_day1.org" "w9_day1.org" "./" "w12_day1.org" "w10_day2.org" "#w8_day2.org#" "beforew4/" "finalexam_review.org" "Lab6CalebEllis.zip" "w8_day3.org" "Lab8AllCalebEllis.zip" "coursework/" "CalebEllisLab7AllParts.zip" "w8_day1.org")
+
+ ("/home/caleb/Documents/School/ENL101/" (22597 24202 612419 566000) "threearticle.org" "Major%20Assignment%204%20Sample%202.docx_0odt" "../" "drafts/" ".#synotes.org" "./" "processWork/" "randomNotes/" "quicknotes.org" "articles/")
+
+ ("/home/caleb/Documents/School/EGR111/" (22605 45197 67462 837000) ".#w6_day2.org" "CourseLectures/" "../" "week7/" "assignments/" "w9_day1.org" "./" "other/" "beforeweek4/" "test.png" "RollercoasterLabReport.docx" "w12_day2.org")
+
+ ("/home/caleb/workspace/lab10/src/" (22601 19922 927997 857000) "../" "./")
+
+ ("/home/caleb/workspace/homework3/" (22602 41717 648020 26000) ".project" ".settings/" "../" "src/" ".classpath" "bin/" "./" "WorldSeriesWinners.txt")
+
+ ("/home/caleb/workspace/lab10/" (22594 47032 731086 643000) ".project" ".settings/" "../" "src/" ".classpath" "bin/" "./")
+
+ ("/home/caleb/Documents/homeworksolver/Mod/" (22560 34149 903930 524000) "../" "./" "setup.py")
+
+ ("/home/caleb/workspace/lab9/src/lab9/" (22572 30763 540759 140000) "../" "./" "IntegerConverter.java" "MainClass.java")
+
+ ("/home/caleb/workspace/lab9/src/" (22572 21479 692431 350000) "../" "./" "lab9/")
+
+ ("/home/caleb/Documents/School/CIS180/coursework/homework2/src/" (22572 24517 76503 538000) "Item.java" "InventoryTrackerInterface.java" "Test.txt" "Inventory.java" "../" "Item.class" "./" "InventoryTrackerInterface.class" "Inventory.class")
+
+ ("/home/caleb/Documents/School/CIS180/coursework/homework2/" (22572 24517 76503 538000) ".project" ".settings/" "Test.txt" "../" "src/" ".classpath" "bin/" "./" "Test3.txt" "Test2.txt")
+
+ ("/home/caleb/workspace/lab9/" (22572 21281 388426 637000) ".project" ".settings/" "../" "src/" ".classpath" "bin/" "./")
+
+ ("/home/caleb/workspace/homework2/" (22551 24802 776426 434000) ".project" ".settings/" "Test.txt" "../" "src/" ".classpath" "bin/" "./")
+
+ ("/home/caleb/Documents/homeworksolver/" (22560 34149 899930 524000) "sample/" "../" "test.py" "./" "browser.py" ".gitignore" "data.py" "TestingModule/" "Mod/" ".git/" "scripts/")
+
+ ("/home/caleb/Documents/Programming/C/" (22554 2105 639071 530000) "mem_examle2.c" "../" "student.c" "./" "mem_example1.c" "test.c" "mem_example3.c" "demo.c" "nim.c")
+
+ ("/home/caleb/workspace/lab7part2/src/" (22545 58288 423405 270000) "../" "./" "DoWhileConversion.java")
+
+ ("/home/caleb/workspace/lab6/src/lab6/" (22535 35844 12846 80000) "../" "./" "MainClass.java" "Box.java")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

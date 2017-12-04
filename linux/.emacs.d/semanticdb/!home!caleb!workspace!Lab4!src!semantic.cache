@@ -1,0 +1,77 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "BMICalcA.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("java.util.Scanner" include nil nil [87 112])
+            ("BMICalcA" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [190 203]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [166 2201]))                  
+                :type "class")
+                nil [114 2204]))          
+      :file "BMICalcA.java"
+      :pointmax 2205
+      :fsize 2204
+      :lastmodtime '(22518 12968 447084 719000)
+      :unmatched-syntax nil)
+    (semanticdb-table "BMICalcB.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("java.util.Scanner" include nil nil [87 112])
+            ("BMICalcB" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [200 213]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [176 2031]))                  
+                :type "class")
+                nil [115 2034]))          
+      :file "BMICalcB.java"
+      :pointmax 2035
+      :fsize 2034
+      :lastmodtime '(22518 16772 455219 817000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ASCIIArt.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("java.util.*" include nil nil [74 93])
+            ("ASCIIArt" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [170 183]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [146 1575]))                  
+                :type "class")
+                nil [94 1580]))          
+      :file "ASCIIArt.java"
+      :pointmax 1581
+      :fsize 1580
+      :lastmodtime '(22518 14627 975143 657000)
+      :unmatched-syntax nil))
+  :file "!home!caleb!workspace!Lab4!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
