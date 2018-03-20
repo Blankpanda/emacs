@@ -9,6 +9,13 @@
 ;; settings folder
 (add-to-list 'load-path "~/.emacs.d/settings")
 
+;; Windows performance tweaks
+;;
+(when (boundp 'w32-pipe-read-delay)
+  (setq w32-pipe-read-delay 0))
+;; Set the buffer size to 64K on Windows (from the original 4K)
+(when (boundp 'w32-pipe-buffer-size)
+  (setq irony-server-w32-pipe-buffer-size (* 64 1024)))
 
 ;; setup
 (setq initial-scratch-message "")
@@ -47,8 +54,9 @@
 (require 'compile)
 (ido-mode t)
 
-;; ------ keybindings -------
 
+;; ------ keybindings -------
+(add-hook 'after-init-hook 'global-company-mode)
 
 (global-set-key [f1] 'dired) ;;run the dired command [f1]
 (global-set-key [f4] 'goto-line) ;; f4 to goto line
@@ -70,7 +78,7 @@
           yas-x-prompt
           yas-completing-prompt
           yas-no-prompt))
-(yas-global-mode 1))
+(yas-global-mode 1)
 
 ;; easier windows movement (<ALT> + ARROW KEYS)
 (when (fboundp 'windmove-default-keybindings)
@@ -119,6 +127,12 @@
 ;; ---- languages ----
 
 ;; C/C++
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'objc-mode-hook 'irony-mode)
+
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+
 (defconst petar-big-fun-c-style
   '((c-electric-pound-behavior   . nil)
     (c-tab-always-indent         . t)
@@ -342,3 +356,7 @@ vi style of % jumping to matching brace."
   (cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
         ((looking-at "\\s\)") (forward-char 1) (backward-list 1))
         (t (self-insert-command (or arg 1)))))
+
+(defun cmd ()
+  (interactive)
+  (call-process-shell-command "start" nil nil nil "cmd" "."))
